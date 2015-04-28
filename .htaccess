@@ -1,0 +1,8 @@
+# Helicon ISAPI_Rewrite configuration file
+# Version 3.1.0.73
+
+RewriteEngine on   
+
+RewriteCond $1 !^(index\.php|attached|temps)   
+
+RewriteRule ^(.*)$ index.php/$1 [L]

@@ -1,0 +1,57 @@
+直接获取
+/information/book/[isbn]		根据isbn获取书本信息
+/information/bookcategory		获取书籍分类
+/information/college			获取学院列表
+/information/major/[college id]	获取专业列表
+
+POST JSON
+	time	时间戳
+
+/user/login		登陆
+	user	用户电话
+	pass	密码
+
+/user/register	注册
+	user	账户
+	pass	密码
+	sex		性别 1男 2女
+	college	学院id
+	major	专业id
+	specialty 擅长
+
+/user/info		获取用户详细信息
+	userid	用户id
+
+
+
+/record/add			发布
+	
+
+/record/detail		获取发布记录详情
+	record	记录id
+
+/record/list		获取发布记录列表
+	page	第几页
+	num		每页个数
+
+/record/reply		发布评论
+	record	记录id
+	sender	发布者id
+	replied	回复的某评论id
+	content	回复内容
+
+/record/replylist	评论列表
+	record	记录id
+
+/record/iwant		我想要
+	record	记录id
+	userid	谁想要id
+
+/record/giveyou		给谁
+	record	记录id
+	recipient 给谁id
+
+
+reponse JSON
+	code	错误码
+	msg		消息
