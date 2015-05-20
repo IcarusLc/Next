@@ -25,7 +25,16 @@ POST JSON
 
 
 /record/add			发布
-	
+	userid
+	isbn
+	title
+	publisher
+	author
+	translator
+	img
+	summary
+	categoryid
+	explain
 
 /record/detail		获取发布记录详情
 	record	记录id

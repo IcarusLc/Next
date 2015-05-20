@@ -13,18 +13,18 @@ class User extends MY_Controller {
 	public function login()
 	{
 		if(!(isset($this->json['user']) && isset($this->json['pass'])))
-			return $this->_display_json(102, $this->lang->line('error_102'));
+			return $this->_error(102);
 		
 		$user = $this->json['user'];
 		$user_password = $this->user_model->get_password($user);
 		if(! $user_password)
-			return $this->_display_json(103, $this->lang->line('error_103'));
+			return $this->_error(103);
 
 		$password = md5( $this->json['pass'] );
 		if($password == $user_password)
-			return $this->_display_json(0, $this->lang->line('succ_login'));
+			$this->_display_json(0, $this->lang->line('succ_login'));
 		else
-			return $this->_display_json(104, $this->lang->line('error_104'));
+			$this->_error(104);
 	}
 	/**
 	 * 注册
@@ -32,10 +32,10 @@ class User extends MY_Controller {
 	public function register()
 	{
 		if(!(isset($this->json['user']) && isset($this->json['pass'])))
-			return $this->_display_json(102, $this->lang->line('error_102'));
+			return $this->_error(102);
 		if(!is_numeric($this->json['college'])
 			|| !is_numeric($this->json['major']))
-			return $this->_display_json(106, $this->lang->line('error_106'));
+			return $this->_error(106);
 		$succ = $this->user_model->register(
 				$this->json['user'],
 				$this->json['pass'],
@@ -44,16 +44,39 @@ class User extends MY_Controller {
 				$this->json['major'],
 				$this->json['specialty']
 			);
-		if($succ)
-			return $this->_display_json(0, $this->lang->line('succ_register'));
-		return $this->_display_json(105, $this->lang->line('error_105'));
+		if(!$succ)
+			return $this->_error(105);
+		if($succ == -1)
+			return $this->_error(108);
+		$this->_display_json(
+			0,
+			$this->lang->line('succ_register'),
+			array('userid' => $succ)
+		);
 	}
 	/**
 	 * 获取账户信息
 	 */
 	public function info()
 	{
+		if(!isset($this->json['userid']))
+			return $this->_error(102);
 
+		$info = $this->user_model->user_information($this->json['userid']);
+		if($info === NULL)
+			return $this->_error(103);
+		switch ($info['sex']) {
+			case 1:
+				$info['sex'] = '男';
+				break;
+			case 2:
+				$info['sex'] = '女';
+				break;
+			default:
+				$info['sex'] = '';
+				break;
+		}
+		$this->_display_json(0, '', $info);
 	}
 }
 

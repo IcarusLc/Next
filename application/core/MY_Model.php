@@ -8,6 +8,15 @@ class MY_Model extends CI_Model{
 		$this->load->database();
 	}
 
+	protected function _insert($table, $data)
+	{
+		if($this->db->insert($table, $data))
+		{
+			return $this->db->insert_id();
+		}
+		return FALSE;
+	} 
+
 	/**
 	 * 获取某字段值
 	 * @param  string $table
@@ -22,9 +31,9 @@ class MY_Model extends CI_Model{
 		$query = $this->db->get($table);
 		if($query->num_rows() > 0)
 		{
-			$result = $query->result_array();
+			$result = $query->row_array();
 			$query->free_result();
-			return $result[0][$field];
+			return $result[$field];
 		}
 		else
 		{
