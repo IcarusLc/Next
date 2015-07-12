@@ -19,13 +19,15 @@ $lang['error_303']	= '已经存在';
 $lang['error_304']	= '未知错误，竞争失败';
 $lang['error_305']	= '设置失败';
 $lang['error_306']	= '此用户没有想要这本书';
-$lang['error_307']	= '回复失败';
+$lang['error_307']  = '回复失败';
+$lang['error_308']  = '上传失败';
 
 $lang['succ_login']		= '登陆成功';
 $lang['succ_register']	= '注册成功';
 $lang['succ_add']	= '添加成功';
 $lang['succ_set']	= '设置成功';
 $lang['succ_reply']	= '回复成功';
+$lang['succ_upload'] = '上传成功';
 
 
 /* End of file user_lang.php */

@@ -55,7 +55,11 @@ class Record_Model extends MY_Model{
 	{
 		$page = intval($page);
 		$num = intval($num);
-		$this->db->select('b_title AS title,b_img AS image,dr_time AS time');
+		$this->db->select('record_id AS id,sender_uid AS senderId,
+			u_name AS senderName,b_title AS title,b_img AS image,
+			dr_time AS time,b_summary AS summary,b_publisher AS publisher,
+			b_author AS author,dr_explain AS `explain`');
+		$this->db->join('u_user', 'u_user.user_id=v_record.sender_uid');
 		$this->db->limit($num, $page * $num);
 		$this->db->order_by('dr_time', 'desc');
 		$result = $this->db->get('v_record');
@@ -87,6 +91,27 @@ class Record_Model extends MY_Model{
 		if($this->db->update('r_deal_record', $update_data))
 			return 0; // 更新成功
 		return 2; // 更新失败
+	}
+	/**
+	 * 获取谁想要
+	 * @param  integer $record_id 记录id
+	 * @return array              名单
+	 */
+	public function get_bid($record_id)
+	{
+		$record_id = intval($record_id);
+		$bidder_str = $this->_select_field(
+			'r_deal_record',
+			'dr_bid_uid',
+			array('record_id' => $record_id)
+		);
+		$this->db->select('user_id AS userID,u_phone AS phone,u_name AS name');
+		$this->db->where_in('user_id', explode(',', $bidder_str));
+		$query = $this->db->get('u_user');
+		if($query->num_rows() <= 0) return array();
+		$bidders = $query->result_array();
+		$query->free_result();
+		return $bidders;
 	}
 	/**
 	 * 设置送书接受者

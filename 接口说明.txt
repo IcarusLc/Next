@@ -31,15 +31,15 @@ POST JSON
 	publisher
 	author
 	translator
-	img
 	summary
 	categoryid
 	explain
+	img
 
 /record/detail		获取发布记录详情
 	record	记录id
 
-/record/list		获取发布记录列表
+/record/recordlist		获取发布记录列表
 	page	第几页
 	num		每页个数
 
@@ -59,6 +59,8 @@ POST JSON
 /record/giveyou		给谁
 	record	记录id
 	recipient 给谁id
+
+/upload/pic			上传图片
 
 
 reponse JSON

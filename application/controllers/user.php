@@ -33,16 +33,15 @@ class User extends MY_Controller {
 	{
 		if(!(isset($this->json['user']) && isset($this->json['pass'])))
 			return $this->_error(102);
-		if(!is_numeric($this->json['college'])
-			|| !is_numeric($this->json['major']))
+		if(!is_numeric($this->json['major']))
 			return $this->_error(106);
 		$succ = $this->user_model->register(
 				$this->json['user'],
 				$this->json['pass'],
-				$this->json['sex'],
-				$this->json['college'],
+				$this->_get('name'),
+				$this->_get('sex'),
 				$this->json['major'],
-				$this->json['specialty']
+				$this->_get('specialty')
 			);
 		if(!$succ)
 			return $this->_error(105);

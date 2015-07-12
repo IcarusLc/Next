@@ -24,10 +24,12 @@ class Test extends CI_Controller {
 		print_r($this->json);
 	}
 
-	public function fuck()
+	public function json()
 	{
-		$url = 'http://localhost/next/record/replylist/';
-		$arr = array('record'=>1);
+		$url = 'http://localhost/next/record/add/';
+		$arr = array('userid'=>'2','isbn'=>'123456','title'=>'ceshishu',
+		'publisher'=>'mc','author'=>'wu','translator'=>'wo','summary'=>'meiyou',
+		'categoryid'=>1,'explain'=>'meiyoushuoming','img'=>"\/uploads\/2015\/05\/2b19b06578f3363aedc8684c2e30873c.jpg");
 
 		$arr['time'] = time();
 		$data = json_encode($arr);
@@ -40,7 +42,7 @@ class Test extends CI_Controller {
 		curl_setopt_array($curl, array(
 				CURLOPT_POST => true,
 				CURLOPT_RETURNTRANSFER => true,
-				CURLOPT_URL => $url.$data,
+				CURLOPT_URL => $url,
 				CURLOPT_POSTFIELDS => $data,
 				CURLOPT_HTTPHEADER => $header
 			));
@@ -48,6 +50,37 @@ class Test extends CI_Controller {
 		echo '<div style="border: solid 1px red;">' . $ret . '</div><br>';
 		$ret = json_decode($ret, true);
 		echo '<pre>'.print_r($ret,true).'</pre>';
+	}
+
+	public function post()
+	{
+		$url = 'http://localhost/next/record/add/';
+		$arr = array('userid'=>'2','isbn'=>'123456','title'=>'ceshishu',
+		'publisher'=>'mc','author'=>'wu','translator'=>'wo','summary'=>'meiyou',
+		'categoryid'=>1,'explain'=>'meiyoushuoming','img'=>"\/uploads\/2015\/05\/2b19b06578f3363aedc8684c2e30873c.jpg");
+
+		$arr['time'] = time();
+		$data = '';
+		foreach ($arr as $key => $value) {
+			$data .= $key . '=' . $value . '&';
+		}
+		$curl = curl_init();
+		curl_setopt_array($curl, array(
+				CURLOPT_POST => true,
+				CURLOPT_RETURNTRANSFER => true,
+				CURLOPT_URL => $url . '?' . $data,
+				CURLOPT_POSTFIELDS => $data
+			));
+		$ret = curl_exec($curl);
+		echo '<div style="border: solid 1px red;">' . $ret . '</div><br>';
+		$ret = json_decode($ret, true);
+		echo '<pre>'.print_r($ret,true).'</pre>';
+	}
+
+	public function upload()
+	{
+		$this->load->helper('url');
+		$this->load->view('upload_test');
 	}
 
 }

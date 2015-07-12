@@ -14,11 +14,12 @@ class Record extends MY_Controller {
 	{
 		$data = array(
 				'b_isbn' => $this->json['isbn'],
-				'b_title' => $this->json['isbn'],
-				'b_publisher' => $this->json['publisher'],
-				'b_author' => $this->json['author'],
-				'b_translator' => $this->json['translator'],
-				'b_summary' => $this->json['summary'],
+				'b_title' => $this->json['title'],
+				'b_publisher' => $this->_get('publisher'),
+				'b_author' => $this->_get('author'),
+				'b_translator' => $this->_get('translator'),
+				'b_img' => $this->_get('img'),
+				'b_summary' => $this->_get('summary'),
 				'category_id' => $this->json['categoryid']
 			);
 		$book_id = $this->record_model->insert_book($data); // 添加书籍
@@ -56,7 +57,7 @@ class Record extends MY_Controller {
 	public function recordlist()
 	{
 		if(!isset($this->json['page']))
-			$this->json['page'] = 1;
+			$this->json['page'] = 0;
 		if(!isset($this->json['num']))
 			$this->json['num'] = 10;
 		$rows = $this->record_model->get_record_list($this->json['page'],
@@ -138,6 +139,16 @@ class Record extends MY_Controller {
 			default:
 				return $this->_error(305);
 		}
+	}
+	/**
+	 * 谁想要
+	 */
+	public function whowant()
+	{
+		if(!isset($this->json['record']))
+			return $this->_error(102);
+		$bidder = $this->record_model->get_bid($this->json['record']);
+		$this->_display_json(0, '', array('bidders' => $bidder));
 	}
 	
 }

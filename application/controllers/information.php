@@ -3,7 +3,7 @@
 class Information extends MY_Controller {
 	function __construct()
 	{
-		parent::__construct(true);
+		parent::__construct(TRUE);
 		$this->load->model('info_model');
 	}
 

@@ -16,12 +16,12 @@ POST JSON
 /user/register	注册
 	user	账户
 	pass	密码
+	name	昵称/姓名
 	sex		性别 1男 2女
-	college	学院id
 	major	专业id
 	specialty 擅长
 		$url = 'http://localhost/next/user/register/';
-		$arr = array('user'=>'15226262626','pass'=>'123456',
+		$arr = array('user'=>'15226262626','pass'=>'123456', 'name'=>'呵呵',
 		'sex'=>1,'college'=>8,'major'=>40,'specialty'=>'我是美女');
 
 /user/info		获取用户详细信息
@@ -41,10 +41,11 @@ POST JSON
 	summary
 	categoryid
 	explain
+	img
 		$url = 'http://localhost/next/record/add/';
 		$arr = array('userid'=>'2','isbn'=>'123456','title'=>'ceshishu',
 		'publisher'=>'mc','author'=>'wu','translator'=>'wo','summary'=>'meiyou',
-		'categoryid'=>1,'explain'=>'meiyoushuoming');
+		'categoryid'=>1,'explain'=>'meiyoushuoming','img'=>"\/uploads\/2015\/05\/2b19b06578f3363aedc8684c2e30873c.jpg");
 
 /record/detail		获取发布记录详情
 	record	记录id
@@ -81,6 +82,34 @@ POST JSON
 	recipient 给谁id
 		$url = 'http://localhost/next/record/giveyou/';
 		$arr = array('record'=>1,'recipient'=>1);
+
+/record/whowant		查看谁想要
+	record	记录id
+		$url = 'http://localhost/next/record/whowant/';
+		$arr = array('record'=>1);
+
+
+
+/upload/pic			上传图片/头像
+	pic		图片name
+
+/upload/pic2		上传图片/头像
+
+
+
+
+/experience/add			发布经验
+	userid
+	explain
+		$url = 'http://localhost/next/experience/add/';
+		$arr = array('userid'=>1,'explain'=>'再发布一条试试好哈哈哈哈哈哈哈');
+
+/experience/recordlist	获取发布记录列表
+	page	第几页
+	num		每页个数
+		$url = 'http://localhost/next/experience/recordlist/';
+		$arr = array('page'=>0,'num'=>2);
+
 
 
 reponse JSON

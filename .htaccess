@@ -3,6 +3,6 @@
 
 RewriteEngine on   
 
-RewriteCond $1 !^(index\.php|attached|temps)   
+RewriteCond $1 !^(index\.php|attached|temps|uploads)   
 
 RewriteRule ^(.*)$ index.php/$1 [L]
