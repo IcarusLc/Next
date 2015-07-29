@@ -14,8 +14,8 @@ POST JSON
 /user/register	注册
 	user	账户
 	pass	密码
+	name	昵称/姓名
 	sex		性别 1男 2女
-	college	学院id
 	major	专业id
 	specialty 擅长
 
@@ -60,7 +60,27 @@ POST JSON
 	record	记录id
 	recipient 给谁id
 
-/upload/pic			上传图片
+/record/whowant		查看谁想要
+	record	记录id
+
+
+
+/upload/pic			上传图片/头像
+	pic		图片name
+
+/upload/pic2		上传图片/头像
+
+
+
+
+/experience/add			发布经验
+	userid
+	explain
+
+/experience/recordlist	获取发布记录列表
+	page	第几页
+	num		每页个数
+
 
 
 reponse JSON
