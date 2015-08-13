@@ -54,10 +54,8 @@ class Test extends CI_Controller {
 
 	public function post()
 	{
-		$url = 'http://localhost/next/record/add/';
-		$arr = array('userid'=>'2','isbn'=>'123456','title'=>'ceshishu',
-		'publisher'=>'mc','author'=>'wu','translator'=>'wo','summary'=>'meiyou',
-		'categoryid'=>1,'explain'=>'meiyoushuoming','img'=>"\/uploads\/2015\/05\/2b19b06578f3363aedc8684c2e30873c.jpg");
+		$url = 'http://localhost/next/record/recordlist/';
+		$arr = array('page'=>0,'num'=>2);
 
 		$arr['time'] = time();
 		$data = '';

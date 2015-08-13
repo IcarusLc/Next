@@ -1,12 +1,15 @@
-直接获取
+直接获取 GET
 /information/book/[isbn]		根据isbn获取书本信息
 /information/bookcategory		获取书籍分类
 /information/college			获取学院列表
 /information/major/[college id]	获取专业列表
 
-POST JSON
+以下接口为POST请求（现阶段使用form方式提交）
+
+JSON方式中必须字段
 	time	时间戳
 
+[用户相关接口]
 /user/login		登陆
 	user	用户电话
 	pass	密码
@@ -18,12 +21,13 @@ POST JSON
 	sex		性别 1男 2女
 	major	专业id
 	specialty 擅长
+	[img]	图片
 
 /user/info		获取用户详细信息
 	userid	用户id
 
 
-
+[书籍记录相关接口] ([]内为可选字段)
 /record/add			发布
 	userid
 	isbn
@@ -42,6 +46,7 @@ POST JSON
 /record/recordlist		获取发布记录列表
 	page	第几页
 	num		每页个数
+	[categoryid]	分类id（有此接口则获取某分类的书籍）
 
 /record/reply		发布评论
 	record	记录id
@@ -64,15 +69,15 @@ POST JSON
 	record	记录id
 
 
-
-/upload/pic			上传图片/头像
+[文件相关接口]
+/upload/pic			上传图片/头像（form方式上传）
 	pic		图片name
 
-/upload/pic2		上传图片/头像
+/upload/pic2		上传图片/头像（文件流方式上传，只能JPG图片）
 
 
 
-
+[经验相关接口]
 /experience/add			发布经验
 	userid
 	explain
@@ -82,7 +87,29 @@ POST JSON
 	num		每页个数
 
 
-
-reponse JSON
+返回信息 reponse JSON
+必含字段：
 	code	错误码
 	msg		消息
+	
+	
+[未完成接口]
+获取某分类时间线
+注册中的img
+/user/modify	修改用户资料
+	user	账户
+	pass	密码
+	name	昵称/姓名
+	sex		性别 1男 2女
+	major	专业id
+	specialty 擅长
+	[img]	图片
+/experience/detail		获取经验记录详情
+	record	记录id
+/experience/reply		发布评论
+	record	记录id
+	sender	发布者id
+	replied	回复的某评论id
+	content	回复内容
+/experience/replylist	评论列表
+	record	记录id
