@@ -57,11 +57,11 @@ JSON方式中必须字段
 		$arr = array('record'=>'1');
 
 /record/recordlist		获取发布记录列表
-	page	第几页
-	num		每页个数
-	[categoryid]	分类id（有此接口则获取某分类的书籍）
+	[page]	第几页(默认0)
+	[num]		每页个数(默认10)
+	[categoryid]	分类id（有则获取某分类的书籍,无则全部）
 		$url = 'http://localhost/next/record/recordlist/';
-		$arr = array('page'=>0,'num'=>2);
+		$arr = array('page'=>0,'num'=>10,'categoryid'=>1);
 
 /record/reply		发布评论
 	record	记录id
@@ -123,7 +123,6 @@ JSON方式中必须字段
 	
 	
 [未完成接口]
-获取某分类时间线
 注册中的img
 /user/modify	修改用户资料
 	user	账户

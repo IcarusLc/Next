@@ -60,8 +60,10 @@ class Record extends MY_Controller {
 			$this->json['page'] = 0;
 		if(!isset($this->json['num']))
 			$this->json['num'] = 10;
+		if(!isset($this->json['categoryid']))
+			$this->json['categoryid'] = 0;
 		$rows = $this->record_model->get_record_list($this->json['page'],
-			$this->json['num']);
+			$this->json['num'], $this->json['categoryid']);
 		if(empty($rows))
 			return $this->_error(302, array('list'=>$rows));
 		$this->_display_json(0, '', array('list'=>$rows));

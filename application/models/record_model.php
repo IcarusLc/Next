@@ -49,17 +49,20 @@ class Record_Model extends MY_Model{
 	 * 获取记录列表
 	 * @param  integer $page 页数(从0开始)
 	 * @param  integer $num  每页条数
+	 * @param  integer $category_id 分类id
 	 * @return array         记录列表
 	 */
-	public function get_record_list($page, $num)
+	public function get_record_list($page, $num, $category_id)
 	{
 		$page = intval($page);
 		$num = intval($num);
 		$this->db->select('record_id AS id,sender_uid AS senderId,
 			u_name AS senderName,b_title AS title,b_img AS image,
 			dr_time AS time,b_summary AS summary,b_publisher AS publisher,
-			b_author AS author,dr_explain AS `explain`');
+			b_author AS author');
 		$this->db->join('u_user', 'u_user.user_id=v_record.sender_uid');
+		if($category_id)
+			$this->db->where('category_id', $category_id);
 		$this->db->limit($num, $page * $num);
 		$this->db->order_by('dr_time', 'desc');
 		$result = $this->db->get('v_record');
