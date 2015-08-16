@@ -25,6 +25,15 @@ JSON方式中必须字段
 
 /user/info		获取用户详细信息
 	userid	用户id
+	
+/user/modify	修改用户资料
+	user	账户
+	pass	密码
+	name	昵称/姓名
+	sex		性别 1男 2女
+	major	专业id
+	specialty 擅长
+	img		图片
 
 
 [书籍记录相关接口] ([]内为可选字段)
@@ -94,15 +103,7 @@ JSON方式中必须字段
 	
 	
 [未完成接口]
-注册中的img
-/user/modify	修改用户资料
-	user	账户
-	pass	密码
-	name	昵称/姓名
-	sex		性别 1男 2女
-	major	专业id
-	specialty 擅长
-	[img]	图片
+
 /experience/detail		获取经验记录详情
 	record	记录id
 /experience/reply		发布评论

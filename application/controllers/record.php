@@ -56,14 +56,11 @@ class Record extends MY_Controller {
 	 */
 	public function recordlist()
 	{
-		if(!isset($this->json['page']))
-			$this->json['page'] = 0;
-		if(!isset($this->json['num']))
-			$this->json['num'] = 10;
-		if(!isset($this->json['categoryid']))
-			$this->json['categoryid'] = 0;
-		$rows = $this->record_model->get_record_list($this->json['page'],
-			$this->json['num'], $this->json['categoryid']);
+		$rows = $this->record_model->get_record_list(
+				$this->_get('page', 0),
+				$this->_get('num', 10),
+				$this->_get('categoryid', 0)
+			);
 		if(empty($rows))
 			return $this->_error(302, array('list'=>$rows));
 		$this->_display_json(0, '', array('list'=>$rows));
@@ -73,12 +70,10 @@ class Record extends MY_Controller {
 	 */
 	public function reply()
 	{
-		if(! isset($this->json['replied']))
-			$this->json['replied'] = 0;
 		$data = array(
 				'record_id' => $this->json['record'],
 				'sender_id' => $this->json['sender'],
-				'replied_id' => $this->json['replied'],
+				'replied_id' => $this->_get('replied', 0),
 				'rp_content' => $this->json['content']
 			);
 		$reply_id = $this->record_model->add_reply($data); // 添加回复

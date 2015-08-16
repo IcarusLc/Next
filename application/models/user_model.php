@@ -81,17 +81,17 @@ class User_Model extends MY_Model{
 			
 	/**
 	 * 修改用户资料
-	 * @param  string $user 电话号码
+	 * @param  string   $user 电话号码
 	 * @param  string 	$password  
 	 * @param  integer  $sex       
 	 * @param  string 	$name      
 	 * @param  integer 	$major     
 	 * @param  string 	$specialty 
 	 * @param  string 	$img 
-	 * @return integer 未存在-1 失败0 用户id>0 
+	 * @return integer 未存在-1 失败0 成功1
 	 */
-	public function modify($user, $pass, $sex, $name ,
-	 $major , $specialty, $img)
+	public function modify($user, $pass, $sex, $name,
+		$major, $specialty, $img)
 	{
 		$sex = intval($sex);
 		$major = intval($major);
@@ -111,7 +111,7 @@ class User_Model extends MY_Model{
 				'u_logo' => $img
 			);
 		$bool = $this->db->update('u_user',$data,array('u_phone'=>$user));
-		return $bool;
+		return intval($bool);
 	}
 }
 

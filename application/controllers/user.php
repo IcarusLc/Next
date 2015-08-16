@@ -35,6 +35,7 @@ class User extends MY_Controller {
 			return $this->_error(102);
 		if(!is_numeric($this->json['major']))
 			return $this->_error(106);
+
 		$succ = $this->user_model->register(
 				$this->json['user'],
 				$this->json['pass'],
@@ -83,7 +84,6 @@ class User extends MY_Controller {
 	 */
 	public function modify()	
 	{
-		
 		if(!is_numeric($this->json['major']))
 			return $this->_error(106);
 		$succ = $this->user_model->modify(
@@ -97,11 +97,12 @@ class User extends MY_Controller {
 			);
 
 		if(!$succ)
-			return $this->_error(105);
+			return $this->_error(109);
+		if($succ == -1)
+			return $this->_error(103);
 		$this->_display_json(
 			0,
-			$this->lang->line('succ_modify'),
-			array('user' => $succ)
+			$this->lang->line('succ_modify')
 		);
 	}
 

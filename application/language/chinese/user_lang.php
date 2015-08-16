@@ -9,6 +9,7 @@ $lang['error_105']	= '注册失败';
 $lang['error_106']	= '传入学院或专业id有误';
 $lang['error_107']	= '消息验证失败';
 $lang['error_108']	= '手机号已被注册';
+$lang['error_109']  = '修改失败';
 
 $lang['error_201']	= 'isbn为空';
 $lang['error_202']	= 'id需为数字';
@@ -24,6 +25,7 @@ $lang['error_308']  = '上传失败';
 
 $lang['succ_login']		= '登陆成功';
 $lang['succ_register']	= '注册成功';
+$lang['succ_modify']  = '修改信息成功';
 $lang['succ_add']	= '添加成功';
 $lang['succ_set']	= '设置成功';
 $lang['succ_reply']	= '回复成功';

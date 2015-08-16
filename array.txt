@@ -32,6 +32,18 @@ JSON方式中必须字段
 	userid	用户id
 		$url = 'http://localhost/next/user/info/';
 		$arr = array('userid'=>'4');
+		
+/user/modify	修改用户资料
+	user	账户
+	pass	密码
+	name	昵称/姓名
+	sex		性别 1男 2女
+	major	专业id
+	specialty 擅长
+	img		图片
+		$url = 'http://localhost/next/user/modify/';
+		$arr = array('user'=>"18326262626",'pass'=>"123456",
+		'sex'=>"1",'name'=>"lc",'major'=>"8",'specialty'=>"",'img'=>"\/uploads\/2015\/05\/2b19b06578f3363aedc8684c2e30873c.jpg");
 
 
 [书籍记录相关接口] ([]内为可选字段)
@@ -123,15 +135,7 @@ JSON方式中必须字段
 	
 	
 [未完成接口]
-注册中的img
-/user/modify	修改用户资料
-	user	账户
-	pass	密码
-	name	昵称/姓名
-	sex		性别 1男 2女
-	major	专业id
-	specialty 擅长
-	[img]	图片
+
 /experience/detail		获取经验记录详情
 	record	记录id
 /experience/reply		发布评论
