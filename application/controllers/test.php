@@ -54,11 +54,14 @@ class Test extends CI_Controller {
 
 	public function post()
 	{
-		$url = 'http://localhost/next/record/recordlist/';
-		$arr = array('page'=>0,'num'=>2);
+		$url = 'http://localhost/next/user/modify/';
+		$arr = array('user'=>"18326262626",'pass'=>"123456",
+		'sex'=>"1",'name'=>"lc",'major'=>"8",'specialty'=>"",'img'=>"\/uploads\/2015\/05\/2b19b06578f3363aedc8684c2e30873c.jpg");
 
+	
 		$arr['time'] = time();
 		$data = '';
+
 		foreach ($arr as $key => $value) {
 			$data .= $key . '=' . $value . '&';
 		}
@@ -72,6 +75,7 @@ class Test extends CI_Controller {
 		$ret = curl_exec($curl);
 		echo '<div style="border: solid 1px red;">' . $ret . '</div><br>';
 		$ret = json_decode($ret, true);
+		
 		echo '<pre>'.print_r($ret,true).'</pre>';
 	}
 

@@ -31,7 +31,7 @@ class User_Model extends MY_Model{
 	 * @return integer 已存在-1 失败0 用户id>0
 	 */
 	public function register($phone, $password, $name,
-		$sex, $major, $specialty)
+		$sex, $major, $specialty, $img)
 	{
 		$sex = intval($sex);
 		$major = intval($major);
@@ -47,7 +47,8 @@ class User_Model extends MY_Model{
 				'u_name' => $name,
 				'u_sex' => $sex,
 				'major_id' => $major,
-				'u_specialty' => $specialty
+				'u_specialty' => $specialty,
+				'u_logo' => $img
 			);
 		return $this->_insert('u_user', $data);
 	}
@@ -77,7 +78,41 @@ class User_Model extends MY_Model{
 			return NULL;
 		}
 	}
-	
+			
+	/**
+	 * 修改用户资料
+	 * @param  string $user 电话号码
+	 * @param  string 	$password  
+	 * @param  integer  $sex       
+	 * @param  string 	$name      
+	 * @param  integer 	$major     
+	 * @param  string 	$specialty 
+	 * @param  string 	$img 
+	 * @return integer 未存在-1 失败0 用户id>0 
+	 */
+	public function modify($user, $pass, $sex, $name ,
+	 $major , $specialty, $img)
+	{
+		$sex = intval($sex);
+		$major = intval($major);
+		if($sex != 1 && $sex != 2)
+			$sex = 0;
+		if(!is_numeric($major))
+			return 0;
+
+		if(! $this->_select_field('u_user','user_id',array('u_phone'=>$user)))
+			return -1;
+		$data = array(
+				'u_password' => MD5($pass),
+				'u_name' => $name,
+				'u_sex' => $sex,
+				'major_id' => $major,
+				'u_specialty' => $specialty,
+				'u_logo' => $img
+			);
+		$bool = $this->db->update('u_user',$data,array('u_phone'=>$user));
+		return $bool;
+	}
 }
 
 

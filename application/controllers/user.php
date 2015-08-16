@@ -41,7 +41,8 @@ class User extends MY_Controller {
 				$this->_get('name'),
 				$this->_get('sex'),
 				$this->json['major'],
-				$this->_get('specialty')
+				$this->_get('specialty'),
+				$this->_get('img')
 			);
 		if(!$succ)
 			return $this->_error(105);
@@ -77,6 +78,33 @@ class User extends MY_Controller {
 		}
 		$this->_display_json(0, '', $info);
 	}
+	/**
+	 * 修改用户资料 
+	 */
+	public function modify()	
+	{
+		
+		if(!is_numeric($this->json['major']))
+			return $this->_error(106);
+		$succ = $this->user_model->modify(
+				$this->json['user'],
+				$this->json['pass'],
+				$this->_get('sex'),
+				$this->_get('name'),
+				$this->json['major'],
+				$this->_get('specialty'),
+				$this->_get('img')
+			);
+
+		if(!$succ)
+			return $this->_error(105);
+		$this->_display_json(
+			0,
+			$this->lang->line('succ_modify'),
+			array('user' => $succ)
+		);
+	}
+
 }
 
 /* End of file user.php */
