@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    
+    <!-- 显示标题的textview -->
+    <TextView  android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:textSize="14dp"
+    android:textColor="#0000ff"
+    android:text="这是一个标题的textview"
+    android:id="@+id/textview_title"
+        />
+    
+    
+<!-- 列表显示的界面 -->
+<TextView 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:id="@+id/text_listname"
+    />
+ <!-- 用于显示列表的listview -->
+<ListView 
+     android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+   android:id="@+id/listview_list"
+    ></ListView>
+</LinearLayout>

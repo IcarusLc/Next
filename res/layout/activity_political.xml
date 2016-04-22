@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/title_bar2" layout="@layout/layout_title_bar_right_btn" />
+    <TextView android:background="#ffe6e6e6" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <ListView android:id="@id/lv_selected" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never" />
+</LinearLayout>

@@ -1,0 +1,8 @@
+GetMethod.get(String url)//使用get的方式获取资源,(包括下面的方法)返回inputStream
+
+PostMethod.post(String url,hashmap<String ,String> item) //使用post方式发送表单,hashmap中<String: 表单中的属性名称  ,String :属性值>,,往hashmap中添加值得方法:           HashMap<String, Object> item = new HashMap<String, Object>();
+			item.put(constants.codeString,news.getCodeString());
+
+PostFile.postfile(String path,String nameString, String urlString,HashMap< String, String > itemHashMap)
+带文件上传的表单提交方式:
+path为文件路径(带文件名),nameString为文件名,urlString 为url,hashmap为表单中其他的字段的属性key和value;

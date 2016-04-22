@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#fff4f4f6" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/title" layout="@layout/layout_title_bar" />
+    <ListView android:id="@id/ll_ce_ping" android:background="#fff4f4f6" android:longClickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="8.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="8.0dip" android:cacheColorHint="#00000000" android:divider="#fff4f4f6" android:dividerHeight="4.0dip" android:choiceMode="singleChoice" android:headerDividersEnabled="false" android:footerDividersEnabled="true" android:overScrollMode="never" />
+</LinearLayout>

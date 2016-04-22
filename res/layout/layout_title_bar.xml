@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rl" android:background="@color/bg_titlebar" android:layout_width="fill_parent" android:layout_height="@dimen/title_bar_height">
+        <Button android:id="@id/left_bt" android:background="@drawable/title_button_left" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginLeft="8.0dip" android:layout_marginTop="10.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="20.0dip" android:textColor="@color/titlebar_text_color" android:id="@id/user_head_tiltle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:maxWidth="210.0dip" android:text="" android:singleLine="true" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        <Button android:textSize="@dimen/title_bar_sp" android:id="@id/right_bt" android:background="@null" android:clickable="true" android:layout_width="55.0dip" android:layout_height="23.0dip" android:layout_marginTop="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

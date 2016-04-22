@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/layout_title_bar_right_btn" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:id="@id/tv_practice_title" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="@string/practice_title" />
+        <EditText android:textSize="15.0sp" android:textColor="#ff333333" android:gravity="top" android:id="@id/et_practice_content_edit" android:background="@drawable/selector_message_setting_edit" android:paddingBottom="14.0dip" android:layout_width="fill_parent" android:layout_height="250.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:hint="@string/input_practice_content" android:singleLine="false" android:maxLength="500" />
+    </LinearLayout>
+</LinearLayout>

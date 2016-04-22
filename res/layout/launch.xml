@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@drawable/lanuch" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:shadow="http://shadow.com">
+    <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="8.0">
+        <TextView android:textStyle="bold" android:textColor="#ff000000" android:gravity="center" android:layout_gravity="bottom" android:id="@id/copyright" android:paddingBottom="80.0px" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

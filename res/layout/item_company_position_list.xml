@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="80.0dip" android:layout_margin="5.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:layout_weight="1.0">
+        <TextView android:gravity="center_vertical" android:id="@id/tv_companyinfo_position" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:text="android开发" android:layout_centerVertical="true" />
+        <TextView android:id="@id/tv_companyinfo_city" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:text="北京" android:layout_toRightOf="@id/tv_companyinfo_position" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:layout_weight="1.0">
+        <TextView android:textColor="#ffffcc00" android:gravity="center" android:id="@id/tv_companyinfo_salary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:text="乐易考在线  " />
+        <TextView android:gravity="center" android:id="@id/tv_companyinfo_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:text="it互联网" />
+        <TextView android:gravity="center" android:id="@id/tv_companyinfo_industry" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:text="it互联网" />
+    </LinearLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:layout_weight="1.0">
+        <TextView android:id="@id/tv_companyinfo_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:text="发布时间: " android:layout_centerVertical="true" />
+        <TextView android:id="@id/tv_companyinfo_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="全职" android:layout_toRightOf="@id/tv_companyinfo_text" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

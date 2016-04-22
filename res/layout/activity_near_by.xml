@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/title_bar" layout="@layout/layout_title_bar_right_image" />
+    <com.tencent.tencentmap.mapsdk.map.MapView android:id="@id/bmapView" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="40.0dip" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginBottom="20.0dip" android:baselineAligned="false" android:layout_alignParentBottom="true">
+        <ImageView android:id="@id/nearby_image" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/curr_gps" android:contentDescription="@string/app_name" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/shape2" android:layout_width="0.0dip" android:layout_height="50.0dip" android:layout_marginRight="5.0dip" android:layout_weight="6.0" android:layout_marginEnd="5.0dip">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="50.0dip" android:layout_weight="0.8">
+                <View android:background="@drawable/position" android:layout_width="18.0dip" android:layout_height="18.0dip" />
+                <Spinner android:entries="@array/juli" android:id="@id/juli_spinner" android:background="@drawable/u135" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <View android:background="#ffe5e5e5" android:layout_width="2.0dip" android:layout_height="40.0dip" />
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="50.0dip" android:layout_weight="1.2">
+                <View android:background="@drawable/num" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_marginLeft="2.0dip" android:layout_marginStart="2.0dip" />
+                <Spinner android:entries="@array/num" android:id="@id/num_spinner" android:background="@drawable/u135" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <View android:background="#ffe5e5e5" android:layout_width="2.0dip" android:layout_height="40.0dip" />
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ly_near_position_detail" android:layout_width="0.0dip" android:layout_height="50.0dip" android:layout_weight="1.0">
+                <View android:background="@drawable/wenjianbao" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_marginLeft="2.0dip" android:layout_marginStart="2.0dip" />
+                <TextView android:textSize="16.0sp" android:id="@id/info_emplyee" android:layout_width="80.0dip" android:layout_height="wrap_content" android:text="职位详情" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginStart="20.0dip">
+        <TextView android:textSize="14.0sp" android:textColor="@color/black_realy" android:id="@id/tv_practice_time_start_item1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/work_start_time" android:layout_weight="1.5" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/gray_light" android:id="@id/tv_practice_time_start_item" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="4.0" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginStart="20.0dip">
+        <TextView android:textSize="14.0sp" android:textColor="@color/black_realy" android:id="@id/tv_practice_time_end_item1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/work_end_time" android:layout_weight="1.5" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/gray_light" android:id="@id/tv_practice_time_end_item" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="4.0" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginStart="20.0dip">
+        <TextView android:textSize="14.0sp" android:textColor="@color/black_realy" android:id="@id/tv_company_name_item1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/work_company_name" android:layout_weight="1.5" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/gray_light" android:id="@id/tv_company_name_item" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="4.0" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginStart="20.0dip">
+        <TextView android:textSize="14.0sp" android:textColor="@color/black_realy" android:id="@id/tv_industry_name_item1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/industry_name" android:layout_weight="1.5" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/gray_light" android:id="@id/tv_industry_name_item" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="4.0" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginStart="20.0dip">
+        <TextView android:textSize="14.0sp" android:textColor="@color/black_realy" android:id="@id/tv_job_name_item1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/show_major_name" android:layout_weight="1.5" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/gray_light" android:id="@id/tv_job_name_item" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="4.0" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginStart="20.0dip">
+        <TextView android:textSize="14.0sp" android:textColor="@color/black_realy" android:id="@id/tv_work_content1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/exeprice_work_des" android:layout_weight="1.5" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/gray_light" android:id="@id/tv_work_content" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="4.0" />
+    </LinearLayout>
+    <ImageView android:layout_gravity="center" android:id="@id/iv_work_certificate_item" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:scaleType="fitXY" android:contentDescription="@string/app_name" />
+</LinearLayout>

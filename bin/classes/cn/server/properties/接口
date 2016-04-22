@@ -1,0 +1,143 @@
+直接获取 GET
+/information/book/[isbn]		根据isbn获取书本信息
+/information/bookcategory		获取书籍分类
+/information/college			获取学院列表
+/information/major/[college id]	获取专业列表
+
+以下接口为POST请求（现阶段使用form方式提交）
+
+JSON方式中必须字段
+	time	时间戳
+
+[用户相关接口]
+/user/login		登陆
+	user	用户电话
+	pass	密码
+		$url = 'http://localhost/next/user/login/';
+		$arr = array('user'=>'2','pass'=>'123456');
+
+/user/register	注册
+	user	账户
+	pass	密码
+	name	昵称/姓名
+	sex		性别 1男 2女
+	major	专业id
+	specialty 擅长
+	[img]	图片
+		$url = 'http://localhost/next/user/register/';
+		$arr = array('user'=>'15226262626','pass'=>'123456', 'name'=>'呵呵',
+		'sex'=>1,'college'=>8,'major'=>40,'specialty'=>'我是美女');
+
+/user/info		获取用户详细信息
+	userid	用户id
+		$url = 'http://localhost/next/user/info/';
+		$arr = array('userid'=>'4');
+
+
+[书籍记录相关接口] ([]内为可选字段)
+/record/add			发布
+	userid
+	isbn
+	title
+	publisher
+	author
+	translator
+	summary
+	categoryid
+	explain
+	img
+		$url = 'http://localhost/next/record/add/';
+		$arr = array('userid'=>'2','isbn'=>'123456','title'=>'ceshishu',
+		'publisher'=>'mc','author'=>'wu','translator'=>'wo','summary'=>'meiyou',
+		'categoryid'=>1,'explain'=>'meiyoushuoming','img'=>"\/uploads\/2015\/05\/2b19b06578f3363aedc8684c2e30873c.jpg");
+
+/record/detail		获取发布记录详情
+	record	记录id
+		$url = 'http://localhost/next/record/detail/';
+		$arr = array('record'=>'1');
+
+/record/recordlist		获取发布记录列表
+	[page]	第几页(默认0)
+	[num]		每页个数(默认10)
+	[categoryid]	分类id（有则获取某分类的书籍,无则全部）
+		$url = 'http://localhost/next/record/recordlist/';
+		$arr = array('page'=>0,'num'=>10,'categoryid'=>1);
+
+/record/reply		发布评论
+	record	记录id
+	sender	发布者id
+	replied	回复的某评论id
+	content	回复内容
+		$url = 'http://localhost/next/record/reply/';
+		$arr = array('record'=>1,'sender'=>2,'replied'=>0,'content'=>'一条回复');
+
+/record/replylist	评论列表
+	record	记录id
+		$url = 'http://localhost/next/record/replylist/';
+		$arr = array('record'=>1);
+
+/record/iwant		我想要
+	record	记录id
+	userid	谁想要id
+		$url = 'http://localhost/next/record/iwant/';
+		$arr = array('record'=>1,'userid'=>1);
+
+/record/giveyou		给谁
+	record	记录id
+	recipient 给谁id
+		$url = 'http://localhost/next/record/giveyou/';
+		$arr = array('record'=>1,'recipient'=>1);
+
+/record/whowant		查看谁想要
+	record	记录id
+		$url = 'http://localhost/next/record/whowant/';
+		$arr = array('record'=>1);
+
+
+[文件相关接口]
+/upload/pic			上传图片/头像（form方式上传）
+	pic		图片name
+
+/upload/pic2		上传图片/头像（文件流方式上传，只能JPG图片）
+
+
+
+[经验相关接口]
+/experience/add			发布经验
+	userid
+	explain
+		$url = 'http://localhost/next/experience/add/';
+		$arr = array('userid'=>1,'explain'=>'再发布一条试试好哈哈哈哈哈哈哈');
+
+/experience/recordlist	获取发布记录列表
+	page	第几页
+	num		每页个数
+		$url = 'http://localhost/next/experience/recordlist/';
+		$arr = array('page'=>0,'num'=>2);
+
+
+返回信息 reponse JSON
+必含字段：
+	code	错误码
+	msg		消息
+	
+	
+[未完成接口]
+注册中的img
+/user/modify	修改用户资料
+	user	账户
+	pass	密码
+	name	昵称/姓名
+	sex		性别 1男 2女
+	major	专业id
+	specialty 擅长
+	[img]	图片
+/experience/detail		获取经验记录详情
+	record	记录id
+/experience/reply		发布评论
+	record	记录id
+	sender	发布者id
+	replied	回复的某评论id
+	content	回复内容
+/experience/replylist	评论列表
+	record	记录id

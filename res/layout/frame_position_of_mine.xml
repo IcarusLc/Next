@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/my_save_title_bar" layout="@layout/layout_title_bar_right_image" />
+    <View android:id="@id/title_line" android:background="#ffffd700" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_below="@id/my_save_title_bar" />
+    <ListView android:id="@id/lv_be_collect" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="55.0dip" android:layout_below="@id/title_line" android:layout_alignParentBottom="true" />
+    <View android:background="#ffdedede" android:layout_width="fill_parent" android:layout_height="7.0dip" android:layout_above="@id/ll_shou" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_shou" android:layout_width="fill_parent" android:layout_height="50.0dip" android:baselineAligned="false" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_weight="1.0">
+            <CheckBox android:gravity="center" android:layout_gravity="center" android:id="@id/checkbox_all" android:background="@drawable/checkbox_selector" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginLeft="25.0dip" android:button="@null" android:layout_marginStart="25.0dip" />
+            <TextView android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="全选" android:layout_marginStart="5.0dip" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/collect_send_all" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_weight="1.0">
+            <View android:background="#ffbababa" android:layout_width="1.0dip" android:layout_height="10.0dip" />
+            <TextView android:gravity="center" android:id="@id/button2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="投递选中职位" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/collect_cancel_all" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_weight="1.0">
+            <View android:background="#ffbababa" android:layout_width="1.0dip" android:layout_height="10.0dip" />
+            <TextView android:gravity="center" android:id="@id/button3" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="批量取消收藏" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

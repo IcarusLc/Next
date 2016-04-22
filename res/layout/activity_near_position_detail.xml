@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include android:id="@id/title_bar" layout="@layout/layout_title_bar_right_image" />
+        <com.bistone.view.AutoListView android:id="@id/lv_near_position_detail" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+    <View android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</RelativeLayout>

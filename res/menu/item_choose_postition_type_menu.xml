@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item android:id="@id/item_allStyle" android:title="不限" />
+        <item android:id="@id/item_fullTime" android:title="全职" />
+        <item android:id="@id/item_partTime" android:title="兼职" />
+        <item android:id="@id/item_practice" android:title="实习" />
+    </group>
+</menu>

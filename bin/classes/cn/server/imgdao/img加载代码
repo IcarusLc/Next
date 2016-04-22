@@ -1,0 +1,13 @@
+imgº”‘ÿ¥˙¬Î∏Ω:
+
+public void onClick(View v) {
+			String path = pathText.getText().toString();
+			try{
+				byte[] data = ImageService.getImage(path);
+				Bitmap bitmap = BitmapFactory.decodeByteArray(data, 0, data.length);
+				imageView.setImageBitmap(bitmap);//œ‘ æÕº∆¨
+			}catch (Exception e) {
+				e.printStackTrace();
+				Toast.makeText(getApplicationContext(), R.string.error, 1).show();
+			}
+	

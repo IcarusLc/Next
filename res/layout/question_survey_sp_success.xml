@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="120.0dip">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:layout_gravity="center_horizontal" android:background="@drawable/surprise1" android:layout_width="220.0dip" android:layout_height="220.0dip" />
+            <RelativeLayout android:layout_gravity="center_horizontal" android:layout_width="240.0dip" android:layout_height="100.0dip">
+                <ImageView android:layout_gravity="center_horizontal" android:background="@drawable/sp_success" android:layout_width="240.0dip" android:layout_height="fill_parent" android:layout_marginTop="20.0dip" />
+                <TextView android:textSize="22.0dip" android:textColor="#fffe1212" android:id="@id/e_bi_success__tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+            <Button android:textSize="@dimen/login_bt_sp" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/sp_back_btn1" android:background="@drawable/back_caidan" android:layout_width="150.0dip" android:layout_height="@dimen/height_login_dp" android:layout_marginTop="20.0dip" android:text="返回" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

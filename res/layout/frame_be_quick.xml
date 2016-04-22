@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/title_bar" layout="@layout/layout_title_bar" />
+    <com.bistone.view.ScrollBottomScrollView android:id="@id/scroll_quick" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="42.0dip">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.bistone.constructor.MainQuickViewPager android:id="@id/slideshowView_bequick" android:layout_width="fill_parent" android:layout_height="180.0dip" android:layout_marginTop="1.0dip" />
+            <View android:background="#ffff8e67" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <LinearLayout android:orientation="horizontal" android:background="#ffff701a" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                <RadioGroup android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <RadioButton android:textColor="#ffffffff" android:gravity="center" android:id="@id/rb_quanguo" android:background="@drawable/radio_nearby_city" android:padding="3.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:checked="true" android:button="@null" android:text="全国" android:layout_weight="1.0" android:onClick="onClick" />
+                    <RadioButton android:textColor="#ffffffff" android:gravity="center" android:id="@id/rb_beijing" android:background="@drawable/radio_nearby_city" android:padding="3.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:checked="true" android:button="@null" android:text="北京" android:layout_weight="1.0" android:onClick="onClick" />
+                    <RadioButton android:textColor="#ffffffff" android:gravity="center" android:id="@id/rb_shanghai" android:background="@drawable/radio_nearby_city" android:padding="3.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:checked="true" android:button="@null" android:text="上海" android:layout_weight="1.0" android:onClick="onClick" />
+                    <RadioButton android:textColor="#ffffffff" android:gravity="center" android:id="@id/rb_guangzhou" android:background="@drawable/radio_nearby_city" android:padding="3.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:checked="true" android:button="@null" android:text="广东" android:layout_weight="1.0" android:onClick="onClick" />
+                    <RadioButton android:textColor="#ffffffff" android:gravity="center" android:id="@id/rb_shenzhen" android:background="@drawable/radio_nearby_city" android:padding="3.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:checked="true" android:button="@null" android:text="湖南" android:layout_weight="1.0" android:onClick="onClick" />
+                    <RadioButton android:textColor="#ffffffff" android:gravity="center" android:id="@id/rb_jiangxi" android:background="@drawable/radio_nearby_city" android:padding="3.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:checked="true" android:button="@null" android:text="江西" android:layout_weight="1.0" android:onClick="onClick" />
+                    <RadioButton android:textColor="#ffffffff" android:gravity="center" android:id="@id/rb_more" android:background="@drawable/radio_nearby_city" android:padding="3.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:checked="true" android:button="@null" android:text="更多" android:layout_weight="1.0" android:onClick="onClick" />
+                </RadioGroup>
+            </LinearLayout>
+            <View android:background="#ffff8e67" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <ListView android:id="@id/lv_bequick" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:divider="#fff4f4f6" android:dividerHeight="5.0dip" />
+        </LinearLayout>
+    </com.bistone.view.ScrollBottomScrollView>
+</RelativeLayout>

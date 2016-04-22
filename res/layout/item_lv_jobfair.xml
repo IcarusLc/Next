@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/shape_jobfair" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip">
+        <TextView android:textSize="16.0sp" android:textColor="#ff00b1c6" android:id="@id/tv_jobfair_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_marginTop="12.0dip" android:layout_marginStart="14.0dip" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_marginTop="10.0dip" android:layout_marginStart="14.0dip">
+            <ImageView android:id="@id/image_jobfair_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/clock" android:contentDescription="@string/app_name" />
+            <TextView android:id="@id/tv_jobfair_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_marginTop="7.0dip" android:layout_marginStart="14.0dip">
+            <ImageView android:id="@id/image_jobfair_address" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/direction" android:contentDescription="@string/app_name" />
+            <TextView android:id="@id/tv_jobfair_address" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_marginTop="7.0dip" android:layout_marginStart="14.0dip">
+            <ImageView android:id="@id/image_jobfair_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/flag" android:contentDescription="@string/app_name" />
+            <TextView android:id="@id/tv_jobfair_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_marginTop="7.0dip" android:layout_marginStart="14.0dip">
+            <ImageView android:id="@id/image_jobfair_unit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/user" android:contentDescription="@string/app_name" />
+            <TextView android:id="@id/tv_jobfair_uint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+        </LinearLayout>
+        <TextView android:textSize="16.0sp" android:textColor="#ff00b1c6" android:id="@id/tv_jobfair_day" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/droplet" android:contentDescription="@string/app_name" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="2.0dip">
+            <TextView android:background="@drawable/shape_jobfair2" android:layout_width="0.0dip" android:layout_height="8.0dip" android:layout_marginLeft="4.0dip" android:layout_weight="1.0" android:layout_marginStart="4.0dip" />
+            <TextView android:background="#ff1bcadf" android:layout_width="0.0dip" android:layout_height="8.0dip" android:layout_weight="1.0" />
+            <TextView android:background="#ff35def2" android:layout_width="0.0dip" android:layout_height="8.0dip" android:layout_weight="1.0" />
+            <TextView android:background="@drawable/shape_jobfair_tv" android:layout_width="0.0dip" android:layout_height="8.0dip" android:layout_marginRight="4.0dip" android:layout_weight="1.0" android:layout_marginEnd="4.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

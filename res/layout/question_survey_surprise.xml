@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#fff4f4f6" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/layout_title_bar_right_tv" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ScrollView android:id="@id/questionlistscroll2" android:background="@drawable/bg_quan_tou" android:layout_width="300.0dip" android:layout_height="250.0dip" android:layout_marginTop="240.0dip" android:layout_centerInParent="true" android:overScrollMode="never">
+            <LinearLayout android:orientation="vertical" android:id="@id/questionlist2" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </ScrollView>
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="30.0dip" android:src="@drawable/surprise_time_limit" />
+            <TextView android:textSize="16.0dip" android:textColor="#ff7f7f7f" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="倒计时" />
+            <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="50.0dip" android:textColor="#ff272727" android:id="@id/down_time1__tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00:" />
+                <TextView android:textSize="50.0dip" android:textColor="#ff272727" android:id="@id/down_time2__tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="10" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

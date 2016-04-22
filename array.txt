@@ -1,4 +1,4 @@
-直接获取 GET
+﻿直接获取 GET
 /information/book/[isbn]		根据isbn获取书本信息
 /information/bookcategory		获取书籍分类
 /information/college			获取学院列表
@@ -76,10 +76,10 @@ JSON方式中必须字段
 		$arr = array('page'=>0,'num'=>10,'categoryid'=>1);
 
 /record/reply		发布评论
-	record	记录id
-	sender	发布者id
-	replied	回复的某评论id
-	content	回复内容
+	record		记录id
+	sender		发布者id
+	[replied]	回复的某评论id
+	content		回复内容
 		$url = 'http://localhost/next/record/reply/';
 		$arr = array('record'=>1,'sender'=>2,'replied'=>0,'content'=>'一条回复');
 
@@ -126,7 +126,13 @@ JSON方式中必须字段
 	num		每页个数
 		$url = 'http://localhost/next/experience/recordlist/';
 		$arr = array('page'=>0,'num'=>2);
-
+/experience/reply		发布评论
+	record		记录id
+	sender		发布者id
+	[replied]	回复的某评论id
+	content		回复内容
+/experience/replylist	评论列表
+	record	记录id
 
 返回信息 reponse JSON
 必含字段：
@@ -138,10 +144,4 @@ JSON方式中必须字段
 
 /experience/detail		获取经验记录详情
 	record	记录id
-/experience/reply		发布评论
-	record	记录id
-	sender	发布者id
-	replied	回复的某评论id
-	content	回复内容
-/experience/replylist	评论列表
-	record	记录id
+

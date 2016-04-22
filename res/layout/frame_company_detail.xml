@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#fff4f4f6" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/title" layout="@layout/layout_title_bar" />
+    <com.bistone.view.ScrollBottomScrollView android:id="@id/sc_company_info" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="42.0dip">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:background="#ffffffff" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                <TextView android:textSize="16.0sp" android:id="@id/tv_cominfo_name" android:paddingTop="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                    <TextView android:textSize="@dimen/mianshi_yaoqing_sp" android:textColor="#ffc0c0c0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="公司简介" android:layout_marginStart="2.0dip" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="10.0dip">
+                    <TextView android:textSize="@dimen/mianshi_yaoqing_sp" android:id="@id/job_description_tv1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="#ffc0c0c0" android:layout_width="fill_parent" android:layout_height="30.0dip">
+                <TextView android:textSize="@dimen/mianshi_yaoqing_sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="职位列表" android:layout_marginStart="10.0dip" />
+            </LinearLayout>
+            <com.bistone.view.ResumeListView android:id="@id/lv_info" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:divider="#fff4f4f6" android:dividerHeight="5.0dip" />
+        </LinearLayout>
+    </com.bistone.view.ScrollBottomScrollView>
+</RelativeLayout>

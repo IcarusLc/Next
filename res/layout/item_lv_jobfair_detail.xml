@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.bistone.view.CircleImg android:id="@id/image_jobfair_detail_logo" android:background="@drawable/compony_detail" android:layout_width="64.0dip" android:layout_height="64.0dip" android:layout_marginLeft="15.0dip" android:layout_marginStart="15.0dip" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="14.0dip" android:layout_marginBottom="15.0dip">
+            <TextView android:textSize="16.0sp" android:id="@id/tv_jobfair_detail_title" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="13.0dip">
+                <TextView android:textSize="14.0sp" android:textColor="@color/gray_light" android:id="@id/tv_jobfair_detail_city" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="14.0sp" android:textColor="#ffff701a" android:id="@id/tv_jobfair_detail_salary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="23.0dip" android:layout_marginStart="23.0dip" />
+            </LinearLayout>
+            <TextView android:textSize="14.0sp" android:textColor="@color/gray_light" android:id="@id/tv_jobfair_detail_compony" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

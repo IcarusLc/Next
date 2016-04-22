@@ -9,11 +9,7 @@ class Upload extends MY_Controller {
 
     public function pic()
     {
-        $path = './uploads/' . date('Y');
-        if(! is_dir($path)) mkdir($path);
-        $path .= date('/m');
-        if(! is_dir($path)) mkdir($path);
-
+        $path = './uploads/2015';
         $config = array(
                 'upload_path' => $path,
                 'allowed_types' => 'gif|png|jpg|jpeg',
@@ -35,10 +31,8 @@ class Upload extends MY_Controller {
 
     public function pic2() {
         $content = file_get_contents('php://input');
-        $path = './uploads/' . date('Y');
-        if(! is_dir($path)) mkdir($path);
-        $path .= date('/m');
-        if(! is_dir($path)) mkdir($path);
+        $path = './uploads/2015';
+
         $this->load->helper('string');
         $fileName = random_string('alnum', 16) . '.jpg';
         $file = $path . '/' . $fileName;

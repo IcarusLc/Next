@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="120.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="#ffdedede" android:layout_width="fill_parent" android:layout_height="7.0dip" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="15.0dip" android:paddingTop="5.0dip" android:paddingRight="15.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="120.0dip" android:paddingStart="15.0dip">
+        <CheckBox android:gravity="center_vertical" android:id="@id/ch_collect1" android:background="@drawable/checkbox_selector" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_margin="5.0dip" android:button="@null" />
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_collect_tv" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_weight="1.0" android:layout_marginStart="5.0dip">
+            <TextView android:textSize="14.0sp" android:textColor="#ff000000" android:gravity="center_vertical" android:id="@id/tv_collect_tv1" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/LightGray" android:gravity="center_vertical" android:id="@id/tv_collect_tv2" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="5.0dip" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_weight="1.0" android:layout_marginStart="20.0dip">
+            <Button android:textSize="14.0sp" android:textColor="#ffffffff" android:layout_gravity="center_horizontal" android:id="@id/bt_collected_bt1" android:background="@drawable/bt_green_tou" android:layout_width="90.0dip" android:layout_height="25.0dip" android:layout_marginRight="5.0dip" android:layout_marginEnd="5.0dip" />
+            <Button android:textSize="14.0sp" android:textColor="#ffffffff" android:layout_gravity="center_horizontal" android:id="@id/bt_collected_bt2" android:background="@drawable/bt_yellow_cancel" android:layout_width="90.0dip" android:layout_height="25.0dip" android:layout_marginTop="3.0dip" android:layout_marginRight="5.0dip" android:layout_marginEnd="5.0dip" />
+            <TextView android:textSize="12.0sp" android:layout_gravity="center_horizontal" android:id="@id/tv_collect_time" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/layout_title_bar_right_btn" />
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <Button android:textSize="18.0sp" android:textColor="@color/resume_bluetext" android:id="@id/add_certificate" android:background="@drawable/btn_add_more_bg" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_margin="16.0dip" android:text="+ 添加证书" />
+        <ListView android:id="@id/certificate_list" android:background="#fff4f4f4" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

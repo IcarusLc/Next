@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/title_bar" layout="@layout/layout_title_bar_right_image" />
+    <com.bistone.view.ViewPagerScrollView android:id="@id/shopping_scrollview" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/title_bar">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include layout="@layout/layout_line_view" />
+            <LinearLayout android:orientation="vertical" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fillViewport="true">
+                <com.bistone.constructor.MainShoppingViewPager android:id="@id/goodsView" android:layout_width="fill_parent" android:layout_height="200.0dip" />
+                <View android:background="#ffeeeed1" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <com.bistone.view.ShoppingGridView android:gravity="center" android:id="@id/gridview_shopping" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="15.0dip" android:horizontalSpacing="7.0dip" android:verticalSpacing="7.0dip" android:stretchMode="columnWidth" android:numColumns="2" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.bistone.view.ViewPagerScrollView>
+</RelativeLayout>

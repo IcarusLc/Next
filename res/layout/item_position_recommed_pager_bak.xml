@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:android_custom="http://schemas.android.com/apk/res/com.bistone.bistonesurvey">
+    <RelativeLayout android:id="@id/rl_large_staue" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <TextView android:textSize="20.0dip" android:textColor="#ffffffff" android:id="@id/tv_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="\?" android:layout_centerHorizontal="true" />
+            <RelativeLayout android:layout_width="90.0dip" android:layout_height="90.0dip" android:layout_below="@id/tv_type" android:layout_centerInParent="true">
+                <com.bistone.view.RoundProgressBarRate android:id="@id/pb_rate" android:layout_width="fill_parent" android:layout_height="fill_parent" android_custom:roundColor="#fffffe71" android_custom:roundProgressColor="#fffffeec" android_custom:roundWidth="8.0dip" android_custom:textColor="#ff9a32cd" android_custom:textSize="14.0sp" />
+                <TextView android:textSize="40.0sp" android:textColor="#ffffffff" android:id="@id/tv_rate" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_centerInParent="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <ImageView android:id="@id/iv_next" android:background="@drawable/arrow_right_white" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginRight="30.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/iv_pervious" android:background="@drawable/arrow_left_white" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="30.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rl_small_statue" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true">
+        <TextView android:textSize="18.0dip" android:textColor="#ffffffff" android:id="@id/tv_left_position" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="行政人事类" android:layout_alignParentLeft="true" android:layout_centerInParent="true" android:rotationY="60.0" />
+        <TextView android:textSize="18.0dip" android:textColor="#ffffffff" android:id="@id/tv_center_position" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="IT技术类" android:layout_centerInParent="true" />
+        <TextView android:textSize="18.0dip" android:textColor="#ffffffff" android:id="@id/tv_right_position" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="设计类" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:rotationY="-60.0" />
+    </RelativeLayout>
+</RelativeLayout>

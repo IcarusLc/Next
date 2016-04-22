@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#fff4f4f6" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="3.4">
+        <ImageView android:background="@drawable/ceping_finish_icon" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@string/app_name" />
+        <TextView android:textSize="18.0sp" android:textColor="#ffffffff" android:id="@id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:text="感谢您的认真参与\n您获得了!" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="15.0dip" android:layout_alignParentEnd="true" />
+        <TextView android:textSize="30.0sp" android:textColor="#ffffffff" android:id="@id/textView3" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="32.0dip" android:text="E币" android:singleLine="true" android:layout_alignBaseline="@id/tv_ecoin" android:layout_alignBottom="@id/tv_ecoin" android:layout_alignParentRight="true" android:layout_marginStart="5.0dip" android:layout_marginEnd="32.0dip" android:layout_alignParentEnd="true" />
+        <TextView android:textSize="30.0sp" android:textColor="#ffffffff" android:id="@id/tv_ecoin" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="22.0dip" android:text="0" android:singleLine="true" android:layout_toLeftOf="@id/textView3" android:layout_below="@id/textView1" android:layout_toStartOf="@id/textView3" />
+        <ImageView android:id="@id/iv_close" android:background="@drawable/close" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="15.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:contentDescription="@string/app_name" android:layout_marginEnd="15.0dip" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_advice" android:background="#ffeeeeee" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="5.0">
+        <TextView android:textSize="16.0sp" android:textColor="#ff333333" android:gravity="center_horizontal" android:id="@id/tv_result_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="6.0dip" android:singleLine="true" />
+        <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/CePingResultTextSize" android:textColor="#ff333333" android:id="@id/tv_result_desc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" />
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

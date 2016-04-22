@@ -1,0 +1,57 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.next"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="20" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        
+        <!-- 主界面 -->
+        <activity android:name="cn.activity.MainActivity"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+    <!-- 测试库 -->
+        <uses-library android:name="android.test.runner" />
+        
+        <!-- Activity列表 -->
+         <activity android:name="cn.server.adapter.Gridviewadapter" />
+          <activity android:name="android.app.ListActivity" />
+           <activity android:name="cn.activity.ListActivity" />
+             <activity android:name="cn.server.imgdao.Achievepic" />
+              <activity android:name="cn.server.imgdao.Takepic" />
+       
+    </application>
+    
+    <!-- 测试 -->
+    
+
+        
+    <!-- 权限:联网 -->
+   <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" /> 
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> 
+<uses-permission android:name="android.permission.CAMERA" /> 
+<uses-permission android:name="android.permission.RECORD_AUDIO" /> 
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> 
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CAMERA" />  
+  
+<uses-feature android:name="android.hardware.camera" />  
+<uses-feature android:name="android.hardware.camera.autofocus" android:required="false" />  
+     <instrumentation   
+        android:name="android.test.InstrumentationTestRunner"  
+        android:targetPackage="com.example.next"                
+        android:label="MyAppTests" />
+    
+</manifest>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="home_grid_texts">
+        <item>积分商城</item>
+        <item>调研</item>
+        <item>附近岗位</item>
+        <item>评测</item>
+        <item>急招</item>
+        <item>搜岗位</item>
+        <item>简历管理</item>
+        <item>资讯</item>
+        <item>在线留言</item>
+    </string-array>
+    <array name="home_grid_imgs">
+        <item>@drawable/app_bequick</item>
+        <item>@drawable/app_nearby</item>
+        <item>@drawable/app_search</item>
+        <item>@drawable/app_position</item>
+        <item>@drawable/app_zhaoping</item>
+        <item>@drawable/app_news</item>
+        <item>@drawable/app_elearn</item>
+        <item>@drawable/app_school</item>
+        <item>@drawable/app_province</item>
+    </array>
+    <string-array name="political_status">
+        <item>请选择</item>
+        <item>群众</item>
+        <item>团员</item>
+        <item>党员</item>
+        <item>其他</item>
+    </string-array>
+    <string-array name="citys">
+        <item>长沙</item>
+        <item>北京</item>
+        <item>上海</item>
+        <item>广州</item>
+        <item>深圳</item>
+        <item>天津</item>
+        <item>重庆</item>
+        <item>西安</item>
+        <item>重庆</item>
+    </string-array>
+    <string-array name="juli">
+        <item>1公里</item>
+        <item>3公里</item>
+        <item>5公里</item>
+    </string-array>
+    <string-array name="num">
+        <item>附近10个</item>
+        <item>附近20个</item>
+        <item>附近50个</item>
+    </string-array>
+</resources>

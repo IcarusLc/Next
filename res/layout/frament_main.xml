@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#fff3f3f5" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/title_bar" layout="@layout/layout_title_bar_right_btn" />
+    <View android:background="#ffff8e67" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <com.bistone.constructor.MainFramentViewPager android:id="@id/slideshowView" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <View android:background="#ffff8e67" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fillViewport="true">
+        <com.bistone.constructor.MainContentGridView android:id="@id/gridview" android:background="#ffffffff" android:paddingBottom="2.0dip" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@null" android:horizontalSpacing="2.0dip" android:verticalSpacing="2.0dip" android:stretchMode="columnWidth" android:numColumns="3" />
+    </ScrollView>
+</LinearLayout>

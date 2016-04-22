@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/layout_title_bar_right_image" />
+    <TextView android:id="@id/tv_result" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="恭喜您，你已成功购得此商品，我们将于2个星期内将此商品邮寄给您，注意查收哦！！" />
+    <Button android:textSize="16.0dip" android:textColor="#ffffffff" android:ellipsize="none" android:layout_gravity="center_horizontal" android:id="@id/btn_tomain" android:background="@drawable/selector_btn_yellow" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:text="回首页" android:singleLine="true" />
+</LinearLayout>

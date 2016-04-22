@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rl_fragments" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <RelativeLayout android:id="@id/main_bar" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_marginTop="1.0dip">
+        <RadioGroup android:orientation="horizontal" android:background="#ffffffff" android:paddingTop="@dimen/icon_pad" android:paddingBottom="@dimen/icon_pad" android:layout_width="fill_parent" android:layout_height="fill_parent" android:checkedButton="@id/main_radio_btn1">
+            <RadioButton android:id="@id/main_radio_btn1" android:background="@drawable/selector_bottom_home" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="32.0dip" android:layout_marginRight="32.0dip" android:button="@null" android:layout_weight="1.0" android:onClick="mainClick" android:layout_marginStart="32.0dip" android:layout_marginEnd="32.0dip" />
+            <RadioButton android:id="@id/main_radio_btn2" android:background="@drawable/selector_bottom_messager" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="32.0dip" android:layout_marginRight="32.0dip" android:button="@null" android:layout_weight="1.0" android:onClick="messageClick" android:layout_marginStart="32.0dip" android:layout_marginEnd="32.0dip" />
+            <RadioButton android:id="@id/main_radio_btn3" android:background="@drawable/selector_bottom_me" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="32.0dip" android:layout_marginRight="32.0dip" android:button="@null" android:layout_weight="1.0" android:onClick="meClick" android:layout_marginStart="32.0dip" android:layout_marginEnd="32.0dip" />
+        </RadioGroup>
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="3.0dip" android:layout_alignParentBottom="true">
+            <TextView android:id="@id/tv_main_juxing" android:background="#ffff701a" android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_weight="1.0" />
+            <TextView android:id="@id/tv_msg_juxing" android:background="#ffff701a" android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_weight="1.0" />
+            <TextView android:id="@id/tv_me_juxing" android:background="#ffff701a" android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_weight="1.0" />
+        </LinearLayout>
+        <TextView android:id="@id/tv_mid_line" android:visibility="invisible" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_centerHorizontal="true" />
+        <com.bistone.view.RedPoint android:id="@id/rp_left_main" android:visibility="invisible" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="8.0dip" android:layout_toRightOf="@id/tv_mid_line" android:layout_marginStart="20.0dip" android:layout_toEndOf="@id/tv_mid_line" />
+    </RelativeLayout>
+</LinearLayout>

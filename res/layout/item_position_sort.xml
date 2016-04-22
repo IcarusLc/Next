@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:id="@id/colayout" android:background="@drawable/selector_listview_item_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/tv_gerenxinxi_sp" android:textColor="@color/tv_leixing_item" android:id="@id/tv_view" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="" android:layout_marginStart="10.0dip" />
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+        <ImageView android:id="@id/rb_select" android:background="@drawable/btn_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:layout_alignParentRight="true" android:contentDescription="@string/app_name" android:layout_marginEnd="8.0dip" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</RelativeLayout>

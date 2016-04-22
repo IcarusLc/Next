@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="right|center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_select" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_marginRight="2.0dip" android:src="@drawable/ico_arrow" android:layout_alignParentRight="true" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/gray" android:id="@id/tv_select" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:text="请选择" android:layout_alignParentRight="true" />
+</RelativeLayout>

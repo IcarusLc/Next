@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="#ffff701a" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/title_bar" android:background="#ff9eddec" layout="@layout/layout_title_bar" />
+    <TextView android:textSize="15.0sp" android:textColor="#ffffffff" android:id="@id/tv_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip" android:text="正在获取答题进度..." android:layout_below="@id/title_bar" android:layout_centerHorizontal="true" />
+    <SeekBar android:id="@id/pb_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/tv_progress" />
+    <RelativeLayout android:id="@id/rl" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:layout_above="@id/RadioGroup" android:layout_below="@id/pb_horizontal">
+        <TextView android:textSize="15.0sp" android:textColor="#ff000000" android:id="@id/tv_subject_no" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:layout_marginStart="15.0dip" />
+        <TextView android:textSize="14.0sp" android:textColor="#ff000000" android:id="@id/tv_subject" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="15.0dip" android:layout_toRightOf="@id/tv_subject_no" android:layout_toEndOf="@id/tv_subject_no" />
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_items" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_below="@id/tv_subject" />
+    </RelativeLayout>
+    <RadioGroup android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/RadioGroup" android:background="#fff6f6f6" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <RadioButton android:textSize="15.0sp" android:textColor="#ff000000" android:gravity="center" android:id="@id/btn_previous" android:background="@drawable/selector_next_question" android:padding="5.0dip" android:layout_width="120.0dip" android:layout_height="wrap_content" android:checked="true" android:button="@null" android:text="上一题" />
+        <RadioButton android:textSize="15.0sp" android:textColor="#ff000000" android:gravity="center" android:id="@id/btn_next" android:background="@drawable/selector_next_question" android:padding="5.0dip" android:layout_width="120.0dip" android:layout_height="wrap_content" android:button="@null" android:text="下一题" />
+    </RadioGroup>
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_cover" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/rl" android:layout_alignTop="@id/tv_progress" />
+</RelativeLayout>

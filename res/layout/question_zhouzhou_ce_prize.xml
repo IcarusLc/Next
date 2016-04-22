@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffefefef" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.2">
+        <Button android:id="@id/deleted_btn2" android:background="@drawable/deleted_btn" android:layout_width="60.0dip" android:layout_height="22.0dip" android:layout_marginTop="10.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+        <ImageView android:id="@id/hongbao_iv2" android:background="@drawable/cai_dan_zhouzhou" android:layout_width="120.0dip" android:layout_height="120.0dip" android:layout_centerInParent="true" />
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_below="@id/hongbao_iv2" android:layout_centerHorizontal="true">
+            <TextView android:textSize="16.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="感谢您的认真参与" />
+            <TextView android:textSize="24.0sp" android:textColor="#ffff7328" android:layout_gravity="center" android:id="@id/e_bi_tv2" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="120E币" />
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <ScrollView android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_weight="1.0" android:overScrollMode="never">
+            <TextView android:id="@id/zhouzhou_end_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="fdsfdsfdsfds" />
+        </ScrollView>
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="10.0dip" android:layout_weight="1.0">
+            <Button android:textSize="16.0sp" android:textColor="#ffffffff" android:id="@id/share_btn2" android:background="#ffffad0c" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="38.0dip" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:text="马上分享" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

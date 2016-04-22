@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:id="@id/coollayout" android:background="@drawable/list_item_selector" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/tv_gerenxinxi_sp" android:textColor="@color/tv_leixing_item" android:id="@id/tv_content" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="计算机软件" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/iv_selected" android:visibility="visible" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="8.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

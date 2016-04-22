@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/layout_title_bar_right_btn" />
+    <View android:background="#ffcfcfcf" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <RelativeLayout android:gravity="center_vertical" android:layout_gravity="center" android:background="@drawable/selector_message_setting_edit" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip">
+        <EditText android:textSize="16.0sp" android:textColor="@color/black" android:textColorHint="#ffbbbbbb" android:gravity="start" android:id="@id/et_interest_content" android:background="#00000000" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="160.0dip" android:minHeight="160.0dip" android:hint="@string/interest_hint_content" android:cursorVisible="true" android:maxLength="5000" android:lineSpacingExtra="5.0dip" android:imeOptions="actionNext" />
+    </RelativeLayout>
+</LinearLayout>

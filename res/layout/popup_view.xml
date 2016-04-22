@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffdead" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/tv_popu_can" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="@string/shooppin_can" />
+    <View android:background="#ffffffe0" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+    <TextView android:id="@id/tv_popu_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="@string/shooppin_price" />
+    <View android:background="#ffffffe0" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+    <TextView android:id="@id/tv_popu_prior" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="@string/shooppin_new" />
+    <View android:background="#ffffffe0" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+</LinearLayout>

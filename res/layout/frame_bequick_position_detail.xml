@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#fff4f4f6" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/title" layout="@layout/layout_title_bar" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="1.0dip">
+            <RelativeLayout android:background="#fff0f0f0" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="12.0sp" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/search_details_notice" />
+            </RelativeLayout>
+            <RelativeLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="35.0dip" android:layout_margin="5.0dip">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_bequick" android:contentDescription="@string/search_details_img" />
+                <TextView android:textSize="16.0sp" android:id="@id/info_title_bequick" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" android:text="" android:layout_centerVertical="true" android:layout_marginStart="25.0dip" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip">
+                <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_clock" android:contentDescription="@string/search_details_img" />
+                <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:id="@id/end_time_bequick" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/search_details_text2" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textColor="#ffff0000" android:id="@id/post_numbers_bequick" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/search_details_text5" />
+                </LinearLayout>
+                <TextView android:id="@id/line_invi" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" />
+                <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/ll_invi" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="14.0sp" android:textColor="#ffff0000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="该企业需要" />
+                    <TextView android:textSize="14.0sp" android:textColor="#ffff0000" android:id="@id/post_numbers" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+                    <TextView android:textSize="14.0sp" android:textColor="#ffff0000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="份简历，您还有投递机会，加油！" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_margin="5.0dip">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="5.0dip" android:layout_weight="1.0" android:layout_marginStart="5.0dip">
+                    <RelativeLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <ImageView android:id="@id/img_money" android:layout_width="16.0dip" android:layout_height="16.0dip" android:src="@drawable/icon_money" android:layout_centerVertical="true" android:contentDescription="@string/search_details_img" />
+                        <TextView android:textSize="14.0sp" android:textColor="#ffff8c00" android:id="@id/info_salary_bequick" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_toRightOf="@id/img_money" android:layout_centerVertical="true" android:layout_toEndOf="@id/img_money" />
+                    </RelativeLayout>
+                    <RelativeLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <ImageView android:id="@id/icon_city" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_city" android:layout_centerVertical="true" android:contentDescription="@string/search_details_img" />
+                        <TextView android:textSize="14.0sp" android:id="@id/info_city_bequick" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_toRightOf="@id/icon_city" android:layout_centerVertical="true" android:layout_toEndOf="@id/icon_city" />
+                    </RelativeLayout>
+                    <RelativeLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <ImageView android:id="@id/icon_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_type" android:layout_centerVertical="true" android:contentDescription="@string/search_details_img" />
+                        <TextView android:textSize="14.0sp" android:id="@id/info_nature_bequick" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_toRightOf="@id/icon_type" android:layout_centerVertical="true" android:layout_toEndOf="@id/icon_type" />
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="5.0dip" android:layout_weight="1.0" android:layout_marginStart="5.0dip">
+                    <RelativeLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <ImageView android:id="@id/icon_exepre" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_expre" android:layout_centerVertical="true" android:contentDescription="@string/search_details_img" />
+                        <TextView android:textSize="14.0sp" android:id="@id/info_exprence_bequick" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_toRightOf="@id/icon_exepre" android:layout_centerVertical="true" android:layout_toEndOf="@id/icon_exepre" />
+                    </RelativeLayout>
+                    <RelativeLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <ImageView android:id="@id/icon_school" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_school" android:layout_centerVertical="true" android:contentDescription="@string/search_details_img" />
+                        <TextView android:textSize="14.0sp" android:id="@id/info_school_bequick" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_toRightOf="@id/icon_school" android:layout_centerVertical="true" android:layout_toEndOf="@id/icon_school" />
+                    </RelativeLayout>
+                    <TextView android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="" android:layout_weight="1.0" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_desc" android:contentDescription="@string/search_details_img" />
+                    <TextView android:textSize="@dimen/mianshi_yaoqing_sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="@string/search_details_position_desc" android:layout_marginStart="2.0dip" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                    <TextView android:textSize="@dimen/mianshi_yaoqing_sp" android:textColor="#ffc0c0c0" android:id="@id/job_description_tv_bequick" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip">
+                <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                    <ImageView android:id="@id/img_com" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_desc" android:layout_centerVertical="true" android:contentDescription="@string/search_details_img" />
+                    <TextView android:textSize="@dimen/mianshi_yaoqing_sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="@string/search_details_company_info" android:layout_toRightOf="@id/img_com" android:layout_centerVertical="true" android:layout_marginStart="2.0dip" android:layout_toEndOf="@id/img_com" />
+                    <TextView android:id="@id/com_more_bequick" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="了解更多" android:drawableRight="@drawable/ico_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/search_details_img" android:textIsSelectable="true" android:drawableEnd="@drawable/ico_arrow" android:layout_marginEnd="5.0dip" android:layout_alignParentEnd="true" />
+                </RelativeLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                    <TextView android:textSize="@dimen/mianshi_yaoqing_sp" android:textColor="#ffc0c0c0" android:id="@id/com_description_tv_bequick" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="12.0dip" android:layout_marginBottom="5.0dip">
+                <Button android:textColor="#ffffffff" android:id="@id/bt_toudi_bequick" android:background="@drawable/selector_btn_yellow" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/search_details_post" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

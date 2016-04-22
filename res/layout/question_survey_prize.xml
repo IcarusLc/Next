@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffefefef" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <Button android:id="@id/deleted_btn" android:background="@drawable/deleted_btn" android:layout_width="60.0dip" android:layout_height="22.0dip" android:layout_marginTop="10.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/hongbao_iv" android:background="@drawable/hong_bao_survey" android:layout_width="120.0dip" android:layout_height="120.0dip" android:layout_centerInParent="true" />
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_below="@id/hongbao_iv" android:layout_centerHorizontal="true">
+            <TextView android:textSize="24.0sp" android:textColor="#ff666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="感谢您的认真参与" />
+            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="24.0sp" android:textColor="#ffff7328" android:layout_gravity="center" android:id="@id/e_bi_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="120" />
+                <TextView android:textSize="24.0sp" android:textColor="#ffff7328" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="E币" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <Button android:textSize="16.0dip" android:textColor="#ffffffff" android:id="@id/share_btn" android:background="#ffffad0c" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="38.0dip" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:text="马上分享" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</LinearLayout>

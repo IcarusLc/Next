@@ -54,11 +54,9 @@ class Test extends CI_Controller {
 
 	public function post()
 	{
-		$url = 'http://localhost/next/user/modify/';
-		$arr = array('user'=>"18326262626",'pass'=>"123456",
-		'sex'=>"1",'name'=>"lc",'major'=>"8",'specialty'=>"",'img'=>"\/uploads\/2015\/05\/2b19b06578f3363aedc8684c2e30873c.jpg");
+		$url = 'http://localhost/next/experience/replylist/';
+		$arr = array('record' =>'1');
 
-	
 		$arr['time'] = time();
 		$data = '';
 

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/rl" android:background="@color/bg_titlebar" android:paddingTop="0.0dip" android:layout_width="fill_parent" android:layout_height="42.0dip">
+        <ImageView android:id="@id/left_bt" android:paddingLeft="12.0dip" android:paddingTop="8.0dip" android:paddingRight="8.0dip" android:paddingBottom="8.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/btn_left" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <RelativeLayout android:gravity="center_vertical" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toRightOf="@id/left_bt">
+            <Button android:textSize="15.0dip" android:textColor="#ffffffff" android:id="@id/btn_searchPosition" android:background="@drawable/btn_ok_selector" android:clickable="true" android:layout_width="40.0dip" android:layout_height="26.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="12.0dip" android:text="搜索" android:layout_alignParentRight="true" />
+            <com.bistone.view.ClearEditText android:textSize="15.0dip" android:gravity="center" android:id="@id/et_search" android:background="@drawable/search_bar_edit_selector" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:hint="搜索职位 " android:singleLine="true" android:drawableLeft="@drawable/search_bar_icon_normal" android:layout_toLeftOf="@id/btn_searchPosition" android:layout_alignParentLeft="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <com.bistone.view.RefreshListView android:id="@id/lv_refreshListView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

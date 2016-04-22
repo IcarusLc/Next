@@ -1,0 +1,23 @@
+这是listview显示的text介绍:
+
+下面是一个例子:
+显示id  title timelenght
+
+ListView listView = (ListView) this.findViewById(R.id.listView);
+        try {
+			List<News> videos = VideoNewsService.getLastNews();
+			List<HashMap<String, Object>> data = new ArrayList<HashMap<String,Object>>();
+			for(News news : videos){
+				HashMap<String, Object> item = new HashMap<String, Object>();
+				item.put("id", news.getId());
+				item.put("title", news.getTitle());
+				item.put("timelength", getResources().getString(R.string.timelength)
+						+ news.getTimelength()+ getResources().getString(R.string.min));
+				data.add(item);
+			}
+			SimpleAdapter adapter = new SimpleAdapter(this, data, R.layout.item,
+					new String[]{"title", "timelength"}, new int[]{R.id.title, R.id.timelength});
+			listView.setAdapter(adapter);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}

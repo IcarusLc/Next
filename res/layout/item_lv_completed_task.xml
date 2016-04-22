@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_completed_task_item" android:background="@drawable/selector_listview_item_bg" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_completed_task_item" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:focusable="false" android:layout_width="60.0dip" android:layout_height="70.0dip" android:layout_marginLeft="10.0dip" android:src="@drawable/item_completed_task_iv" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/zhouzhouce_sp" android:id="@id/tv_title1" android:paddingTop="3.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:text="社会热点调研问卷" android:singleLine="true" />
+        </LinearLayout>
+        <RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+            <TextView android:textSize="@dimen/zhouzhouce_date" android:textColor="@color/tv_ceping_item" android:gravity="center_vertical" android:id="@id/task_shengyu_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="剩余名额：" />
+            <TextView android:textSize="@dimen/zhouzhouce_date" android:textColor="@color/tv_ceping_item_renshu" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/tv_numbers1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="500 " android:maxLines="2" android:layout_toRightOf="@id/task_shengyu_tv" />
+            <TextView android:textSize="@dimen/zhouzhouce_date" android:textColor="@color/tv_ceping_item" android:gravity="center_vertical" android:id="@id/tv_date1" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:text="03-04" android:singleLine="true" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

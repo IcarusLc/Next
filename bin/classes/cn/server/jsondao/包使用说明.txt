@@ -1,0 +1,35 @@
+
+jsondao.RBs 类
+
+public  List<Bookdao> parseJSONofbook(InputStream inStream)  
+ 
+//用于获取书本列表的所有book的信息,inputStream是get/post之后的返回的json,bookdao中封装了各种用于获取信息的方法
+
+
+public List<HashMap<String, Object>> getListHashMap(InputStream inStream)
+
+//方便simpleadepter使用的list<hashmap>,同样是返回书本列表的所有book的信息,inputStream是get/post之后的返回的json,bookdao中封装了各种用于获取信息的方法  这是simpleadepter:打开声明 android.widget.SimpleAdapter.SimpleAdapter(Context context,List<? extends Map<String,?>> data,int resource,String[] from,int[] to)
+
+json.bookdao:
+
+	String codeString;
+	String msgString;
+	String sender_idString;
+	String explainString;
+	String timeString;
+	String sender_nameString;
+	
+	String book_idString;
+	String book_isbnString;
+	String book_istitleString;
+	String b_publisher;
+	String b_author;
+	String b_translator;
+	String b_img;
+	String b_summary;
+	String category_id;
+
+
+所有字段的getset方法
+
+稍后我会完成图片上传的包,还有表单提交看看能不能做出通配类

@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: 2015-08-15 05:06:13
+-- Generation Time: 2015-08-17 05:29:24
 -- 服务器版本： 5.6.11
 -- PHP Version: 5.5.1
 
@@ -120,6 +120,21 @@ CREATE TABLE IF NOT EXISTS `r_experience_record` (
 INSERT INTO `r_experience_record` (`record_id`, `sender_uid`, `er_explain`, `er_time`, `er_status`) VALUES
 (5, 6, '保研中山大学', '2015-06-05 13:05:15', 0),
 (6, 1, '拿到华为、美团等offer', '2015-06-05 13:06:07', 0);
+
+-- --------------------------------------------------------
+
+--
+-- 表的结构 `r_experience_reply`
+--
+
+CREATE TABLE IF NOT EXISTS `r_experience_reply` (
+`reply_id` int(11) NOT NULL COMMENT '回复记录id',
+  `record_id` int(11) NOT NULL COMMENT '所属交易id',
+  `sender_id` int(11) NOT NULL COMMENT '发布者id',
+  `replied_id` int(11) NOT NULL DEFAULT '0' COMMENT '回复的评论的id',
+  `rp_content` varchar(200) DEFAULT NULL COMMENT '内容',
+  `rp_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '回复时间'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='评论表' AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -416,7 +431,7 @@ INSERT INTO `u_user` (`user_id`, `u_phone`, `u_name`, `u_password`, `u_sex`, `co
 (5, '15226262626', '任强正', 'c4ca4238a0b923820dcc509a6f75849b', 2, 8, 40, '我是美女', '/uploads/2015/05/logo.png'),
 (6, '15288889999', '周之明', 'c4ca4238a0b923820dcc509a6f75849b', 1, 10, 56, '我是大神', '/uploads/2015/05/69bcb3bfjw1dyx81uhlelg.gif'),
 (7, '15288887777', '侯晓元', 'c4ca4238a0b923820dcc509a6f75849b', 1, 11, 60, '我是大神', '/uploads/2015/05/1dqfn9j.jpg'),
-(8, '18326262626', '汪晓峰', 'c4ca4238a0b923820dcc509a6f75849b', 1, 8, 40, '我是美女', '/uploads/2015/05/111111.png');
+(8, '18326262626', 'lc', 'c4ca4238a0b923820dcc509a6f75849b', 1, 8, 8, '士大夫1', '\\/uploads\\/2015\\/05\\/2b19b06578f3363aedc8684c2e30873c.jpg');
 
 --
 -- 触发器 `u_user`
@@ -519,6 +534,12 @@ ALTER TABLE `r_experience_record`
  ADD PRIMARY KEY (`record_id`);
 
 --
+-- Indexes for table `r_experience_reply`
+--
+ALTER TABLE `r_experience_reply`
+ ADD PRIMARY KEY (`reply_id`);
+
+--
 -- Indexes for table `r_reply`
 --
 ALTER TABLE `r_reply`
@@ -566,6 +587,11 @@ MODIFY `record_id` int(11) NOT NULL AUTO_INCREMENT COMMENT '记录id',AUTO_INCRE
 --
 ALTER TABLE `r_experience_record`
 MODIFY `record_id` int(11) NOT NULL AUTO_INCREMENT COMMENT '记录id',AUTO_INCREMENT=7;
+--
+-- AUTO_INCREMENT for table `r_experience_reply`
+--
+ALTER TABLE `r_experience_reply`
+MODIFY `reply_id` int(11) NOT NULL AUTO_INCREMENT COMMENT '回复记录id';
 --
 -- AUTO_INCREMENT for table `r_reply`
 --

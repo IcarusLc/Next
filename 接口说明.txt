@@ -1,4 +1,4 @@
-直接获取 GET
+﻿直接获取 GET
 /information/book/[isbn]		根据isbn获取书本信息
 /information/bookcategory		获取书籍分类
 /information/college			获取学院列表
@@ -94,7 +94,13 @@ JSON方式中必须字段
 /experience/recordlist	获取发布记录列表
 	page	第几页
 	num		每页个数
-
+/experience/reply		发布评论
+	record	记录id
+	sender	发布者id
+	replied	回复的某评论id
+	content	回复内容
+/experience/replylist	评论列表
+	record	记录id
 
 返回信息 reponse JSON
 必含字段：
@@ -106,10 +112,4 @@ JSON方式中必须字段
 
 /experience/detail		获取经验记录详情
 	record	记录id
-/experience/reply		发布评论
-	record	记录id
-	sender	发布者id
-	replied	回复的某评论id
-	content	回复内容
-/experience/replylist	评论列表
-	record	记录id
+

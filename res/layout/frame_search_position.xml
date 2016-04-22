@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="40.0dip">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/left_back" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/btn_left" android:scaleType="fitXY" android:contentDescription="@string/app_name" />
+        <RelativeLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="10.0">
+            <EditText android:textSize="15.0sp" android:layout_gravity="bottom" android:id="@id/search" android:background="@null" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="3.0dip" android:hint="@string/search_pop_hint" android:singleLine="true" android:layout_marginStart="10.0dip" />
+            <View android:background="@drawable/search_edit" android:layout_width="fill_parent" android:layout_height="5.0dip" android:layout_marginBottom="10.0dip" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <Button android:layout_gravity="center_vertical" android:id="@id/left_search" android:background="@drawable/selector_button" android:clickable="true" android:layout_width="0.0dip" android:layout_height="30.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:scaleType="fitXY" android:layout_weight="1.5" />
+    </LinearLayout>
+    <RadioGroup android:orientation="horizontal" android:id="@id/search_group" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginTop="1.0dip">
+        <RadioButton android:textColor="@color/key_tv_col" android:gravity="center" android:id="@id/bt_position_choice" android:background="@drawable/selector_radio_back" android:layout_width="0.0dip" android:layout_height="fill_parent" android:button="@null" android:text="@string/search_pop_choice" android:layout_weight="1.0" />
+        <TextView android:background="#fff0f0f0" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" />
+        <RadioButton android:textColor="@color/key_tv_col" android:gravity="center" android:id="@id/bt_system_order" android:background="@drawable/selector_radio_back" android:layout_width="0.0dip" android:layout_height="fill_parent" android:button="@null" android:text="@string/search_pop_order" android:layout_weight="1.0" />
+    </RadioGroup>
+    <com.bistone.view.AutoListView android:id="@id/listView_search" android:paddingTop="5.0dip" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="#fff4f4f6" android:dividerHeight="5.0dip" />
+</LinearLayout>

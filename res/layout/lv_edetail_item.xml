@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="#ffeaeaea" android:layout_width="fill_parent" android:layout_height="7.0dip" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/img_edtail_item" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="18.0dip" android:src="@drawable/red_flag" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:contentDescription="@string/app_name" android:layout_marginStart="20.0dip" android:layout_alignParentStart="true" />
+        <TextView android:textSize="15.0sp" android:id="@id/tv_edtail_item_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="10.0dip" android:layout_toRightOf="@id/img_edtail_item" android:layout_marginStart="20.0dip" android:layout_toEndOf="@id/img_edtail_item" />
+        <TextView android:textColor="#ffb0b0b0" android:id="@id/tv_edtail_item_date" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_below="@id/img_edtail_item" android:layout_alignLeft="@id/tv_edtail_item_name" android:layout_alignStart="@id/tv_edtail_item_name" />
+        <TextView android:textColor="#ffb0b0b0" android:id="@id/tv_edtail_item_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="1.0dip" android:layout_toLeftOf="@id/textView1" android:layout_above="@id/tv_edtail_item_date" android:layout_toStartOf="@id/textView1" />
+        <TextView android:textColor="#ffb0b0b0" android:id="@id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:text="@string/edetail_E" android:singleLine="true" android:layout_above="@id/tv_edtail_item_date" android:layout_alignParentRight="true" android:layout_marginEnd="15.0dip" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</LinearLayout>

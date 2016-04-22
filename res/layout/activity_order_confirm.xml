@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/layout_title_bar_right_image" />
+        <RelativeLayout android:id="@id/comfim_rl" android:background="#ffffc52b" android:layout_width="fill_parent" android:layout_height="100.0dip">
+            <LinearLayout android:orientation="horizontal" android:id="@id/ll_confirm_name" android:paddingLeft="16.0dip" android:paddingTop="10.0dip" android:paddingRight="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/shooppin_consignee" />
+                <TextView android:textColor="#ffffffff" android:id="@id/tv_order_name" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <TextView android:textColor="#ffffffff" android:id="@id/tv_confirm_phone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="30.0dip" android:text="" android:layout_alignBottom="@id/ll_confirm_name" android:layout_alignParentRight="true" android:layout_marginEnd="30.0dip" android:layout_alignParentEnd="true" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/ll_confirm_address" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/ll_confirm_name" android:layout_alignParentLeft="true" android:layout_alignParentStart="true">
+                <TextView android:textColor="#ffffffff" android:gravity="center_vertical" android:id="@id/tv_confirm_address" android:layout_width="290.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:drawableLeft="@drawable/user_address" android:drawableStart="@drawable/user_address" />
+            </LinearLayout>
+            <ImageView android:id="@id/iv_shop1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ico_arrow" android:layout_toRightOf="@id/ll_confirm_address" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/app_name" android:layout_toEndOf="@id/ll_confirm_address" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <View android:background="#ffdbdbdb" android:layout_width="wrap_content" android:layout_height="10.0dip" />
+        <RelativeLayout android:id="@id/rl_goods_list" android:background="@drawable/item_resume_background" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:id="@id/ll_goods_show" android:paddingRight="80.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@id/iv_show" android:paddingTop="20.0dip" android:paddingBottom="20.0dip" android:layout_width="80.0dip" android:layout_height="80.0dip" android:layout_marginLeft="5.0dip" android:src="@drawable/goods_show" android:scaleType="centerCrop" android:contentDescription="@string/app_name" android:layout_marginStart="5.0dip" />
+                <TextView android:id="@id/tv_goods_name" android:paddingTop="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="" android:layout_marginStart="5.0dip" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_money_sum" android:paddingLeft="5.0dip" android:paddingTop="20.0dip" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentEnd="true">
+                <TextView android:textColor="#ffffc52b" android:id="@id/tv_price_e" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="" android:singleLine="true" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/edetail_E" android:singleLine="true" android:layout_marginStart="5.0dip" />
+            </LinearLayout>
+            <TextView android:textColor="#ffffc52b" android:id="@id/tv_e_num" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="40.0dip" android:layout_height="wrap_content" android:layout_below="@id/ll_money_sum" android:layout_alignParentRight="true" android:layout_alignParentEnd="true" />
+            <TextView android:id="@id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="×" android:layout_toLeftOf="@id/tv_e_num" android:layout_alignBaseline="@id/tv_e_num" android:layout_alignBottom="@id/tv_e_num" android:layout_toStartOf="@id/tv_e_num" />
+        </RelativeLayout>
+        <View android:background="#ffdbdbdb" android:layout_width="wrap_content" android:layout_height="10.0dip" />
+        <RelativeLayout android:gravity="center" android:orientation="horizontal" android:paddingLeft="16.0dip" android:paddingTop="10.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fillViewport="true">
+            <TextView android:textSize="18.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/shooppin_exchange" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_alignParentStart="true" />
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentEnd="true">
+                <Button android:id="@id/addbt" android:background="@drawable/selector_shopping_minus" android:layout_width="35.0dip" android:layout_height="35.0dip" />
+                <EditText android:gravity="center" android:id="@id/edt1" android:background="@drawable/shopping_order_num" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="35.0dip" android:layout_height="35.0dip" android:text="1" android:hint="" android:cursorVisible="true" android:includeFontPadding="true" />
+                <Button android:id="@id/subbt" android:background="@drawable/selector_shopping_add" android:layout_width="35.0dip" android:layout_height="35.0dip" />
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/rl_sum" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="10.0dip">
+            <RelativeLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_alignParentBottom="true">
+                <LinearLayout android:id="@id/ll_sum" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_alignParentStart="true">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/shooppin_amount" />
+                    <TextView android:textColor="#ffffc52b" android:id="@id/tv_sum" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <TextView android:textColor="#ffffc52b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="E币" />
+                </LinearLayout>
+                <Button android:id="@id/btn_confirm" android:background="@drawable/selector_shopping_confirm" android:layout_width="70.0dip" android:layout_height="35.0dip" android:layout_marginRight="16.0dip" android:text="@string/shooppin_submit" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="16.0dip" android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ly_order_reflash" android:background="#60000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/edetail_E_reflash" />
+    </LinearLayout>
+</RelativeLayout>

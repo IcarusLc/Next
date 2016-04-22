@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    >
+    
+<!-- 上部的导航 包括个人(我) /搜索  /扫一扫 -->
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/imageButton_wo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            
+            android:src="@drawable/wo" />
+
+
+          <ImageButton
+            android:id="@+id/imageButton_saoyisao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/saoyisao" 
+          />
+        
+        
+        <ImageButton
+            android:id="@+id/imageButton_sousuo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           
+         android:layout_toLeftOf="@+id/imageButton_saoyisao"
+         android:layout_toRightOf="@+id/imageButton_wo"
+            android:src="@drawable/sousuo" />
+
+
+    </RelativeLayout>
+    
+    
+       
+    
+    <!-- 显示分类的条目,使用网格 -->
+    
+    <GridView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="4"
+            android:id="@+id/gridview_fenlei"
+            android:gravity="center"
+        >
+        <!-- 在适配器中加载相应的图标文字 -->
+    </GridView>
+    
+    <!-- 今日更新推荐:图片的提示标题 -->
+     <ImageView
+        android:id="@+id/img_tuijian"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/jinrituijian"/>
+    
+     
+     <!-- 今日推荐的列表,使用一个条目gridview类似百度文库的推荐 -->
+     <GridView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="4"
+            android:id="@+id/gridview_tuijian"
+            android:gravity="center"
+        >
+        <!-- 在适配器中加载相应的图标文字 -->
+    </GridView>
+     
+     
+</LinearLayout>

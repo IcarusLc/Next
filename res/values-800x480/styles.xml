@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="sysbgL">
+        <item name="android:background">#ffffffff</item>
+    </style>
+    <style name="titlebarL">
+        <item name="android:textSize">12.0dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">5.0dip</item>
+        <item name="android:paddingTop">2.0dip</item>
+        <item name="android:paddingBottom">2.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentTop">true</item>
+    </style>
+    <style name="main_tab_bottomL">
+        <item name="android:textSize">18.0dip</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:paddingTop">5.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@null</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:drawablePadding">2.0dip</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="default_qtitleL">
+        <item name="android:textSize">13.0dip</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">#ff000000</item>
+        <item name="android:background">#ffffff00</item>
+        <item name="android:paddingLeft">0.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="default_textstyleL">
+        <item name="android:textSize">12.0dip</item>
+        <item name="android:textColor">#ffa1a1a1</item>
+        <item name="android:paddingLeft">2.0dip</item>
+        <item name="android:paddingTop">5.0dip</item>
+        <item name="android:paddingRight">2.0dip</item>
+        <item name="android:paddingBottom">5.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="default_raidostyleL">
+        <item name="android:textSize">12.0dip</item>
+        <item name="android:textColor">#ffa1a1a1</item>
+        <item name="android:paddingTop">4.0dip</item>
+        <item name="android:paddingBottom">2.0dip</item>
+    </style>
+    <style name="default_checkboxstyleL">
+        <item name="android:textSize">12.0dip</item>
+        <item name="android:textColor">#ffa1a1a1</item>
+        <item name="android:paddingTop">2.0dip</item>
+        <item name="android:paddingBottom">2.0dip</item>
+    </style>
+    <style name="default_mtextstyleL">
+        <item name="android:textSize">12.0dip</item>
+        <item name="android:textColor">#ff000000</item>
+        <item name="android:paddingLeft">2.0dip</item>
+        <item name="android:paddingTop">2.0dip</item>
+        <item name="android:paddingRight">2.0dip</item>
+        <item name="android:paddingBottom">2.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="default_openstyleL">
+        <item name="android:textSize">12.0dip</item>
+        <item name="android:paddingLeft">2.0dip</item>
+        <item name="android:paddingTop">2.0dip</item>
+        <item name="android:paddingRight">2.0dip</item>
+        <item name="android:paddingBottom">2.0dip</item>
+        <item name="android:layout_width">300.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="default_descstyleL">
+        <item name="android:textSize">13.0dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ff000000</item>
+        <item name="android:background">#ffffffff</item>
+        <item name="android:paddingLeft">2.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+</resources>

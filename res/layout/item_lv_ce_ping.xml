@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_ceping_item" android:background="@drawable/sel_lv_item_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/ce_ping_item_iv" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" android:src="@drawable/item_ce_ping" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_weight="230.0">
+        <TextView android:textSize="@dimen/tv_sp" android:textColorHighlight="#ff00ffff" android:gravity="center_vertical" android:id="@id/tv_titlepro" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:text="职业价值" android:singleLine="true" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/zhouzhouce_date" android:textColor="@color/tv_ceping_item" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="参与人数：" />
+            <TextView android:textSize="@dimen/zhouzhouce_sp" android:textColor="@color/tv_ceping_item_renshu" android:gravity="center_vertical" android:id="@id/numbers_tv" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="scs" android:singleLine="true" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

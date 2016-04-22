@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/send_detail_title_bar" layout="@layout/layout_title_bar_right_image" />
+    <View android:background="#ffdcdcdc" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+    <RelativeLayout android:gravity="clip_vertical" android:id="@id/send_position_detail" android:layout_width="fill_parent" android:layout_height="60.0dip">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="25.0dip" android:layout_marginStart="10.0dip" android:layout_marginEnd="25.0dip">
+            <TextView android:textSize="14.0sp" android:id="@id/tv_send_detail_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginStart="10.0dip" />
+            <TextView android:textSize="12.0sp" android:textColor="#ffababab" android:id="@id/tv_send_detail_company" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="3.0dip" android:layout_marginStart="10.0dip" />
+        </LinearLayout>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:src="@drawable/ico_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/app_name" android:layout_marginEnd="15.0dip" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <View android:background="#ffdcdcdc" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+    <TextView android:textSize="18.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="简历跟踪" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="200.0dip">
+        <ImageView android:id="@id/imageView_sendposition" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginTop="10.0dip" android:src="@drawable/jianli_gou_no" android:layout_alignParentLeft="true" android:contentDescription="@string/app_name" android:layout_marginStart="30.0dip" android:layout_alignParentStart="true" />
+        <TextView android:textSize="18.0sp" android:id="@id/tv_sendposition_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:text="未投递" android:layout_toRightOf="@id/imageView_sendposition" android:layout_alignTop="@id/imageView_sendposition" android:layout_marginStart="24.0dip" android:layout_toEndOf="@id/imageView_sendposition" />
+        <TextView android:id="@id/tv_sendposition_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_below="@id/imageView_sendposition" android:layout_alignLeft="@id/tv_sendposition_status" android:layout_alignStart="@id/tv_sendposition_status" />
+        <TextView android:id="@id/tv_sendposition_detail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/tv_sendposition_time" android:layout_alignLeft="@id/tv_sendposition_time" android:layout_alignStart="@id/tv_sendposition_time" />
+        <ImageView android:id="@id/imageView_sendposition2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="55.0dip" android:src="@drawable/jianli_gou_no" android:layout_below="@id/tv_sendposition_detail" android:layout_alignLeft="@id/imageView_sendposition" android:contentDescription="@string/app_name" android:layout_alignStart="@id/imageView_sendposition" />
+        <TextView android:textSize="18.0sp" android:id="@id/tv_select_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="未查看" android:layout_alignLeft="@id/tv_sendposition_detail" android:layout_alignTop="@id/imageView_sendposition2" android:layout_alignStart="@id/tv_sendposition_detail" />
+        <TextView android:id="@id/tv_select_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_below="@id/imageView_sendposition2" android:layout_alignLeft="@id/tv_select_status" android:layout_alignStart="@id/tv_select_status" />
+        <TextView android:id="@id/tv_select_detail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/tv_select_time" android:layout_alignLeft="@id/tv_select_time" android:layout_alignStart="@id/tv_select_time" />
+        <View android:background="#ffeead0e" android:layout_width="2.0dip" android:layout_height="95.0dip" android:layout_marginLeft="40.0dip" android:layout_below="@id/imageView_sendposition" android:layout_marginStart="40.0dip" />
+    </RelativeLayout>
+</LinearLayout>
